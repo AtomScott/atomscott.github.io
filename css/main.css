@@ -290,7 +290,6 @@ hr {
 }
 
 .container {
-	max-width: 1280px;
 	padding: 40px 180px;
 }
 
@@ -391,9 +390,11 @@ hr {
 	.adate {
 		font-size: 16px;
 	}
+
 	.atitle {
 		font-size: 16px;
 	}
+
 	.adesc {
 		font-size: 12px;
 	}
@@ -477,9 +478,11 @@ hr {
 	.rdate {
 		font-size: 16px;
 	}
+
 	.rtitle {
 		font-size: 16px;
 	}
+
 	.rdesc {
 		font-size: 12px;
 	}
@@ -606,21 +609,26 @@ hr {
 		right: 20px;
 		top: 20px;
 	}
+
 	.jumbotron .container {
 		top: 20%;
 		padding-top: 0px;
 	}
+
 	.jumbotron .scroll-down {
 		width: 100%;
 		right: 0px;
 	}
+
 	.navbar {
 		left: 0px;
 		width: 100%;
 	}
+
 	.navbar .nav>li {
 		height: 60px;
 	}
+
 	.navbar .nav>li a {
 		height: 60px;
 		text-align: center;
@@ -628,46 +636,59 @@ hr {
 		font-weight: 600;
 		color: #FFFFFF;
 	}
+
 	.fixed .navbar {
 		top: 0px;
 	}
+
 	.container {
 		padding: 60px 20px;
 		min-width: 280px;
 	}
+
 	.hidden-phone {
 		display: none;
 	}
+
 	#profile .row * {
 		text-align: center;
 	}
+
 	#experiences .experience .experience-details>span {
 		display: block;
 		margin-bottom: 6px;
 	}
+
 	#experiences .experience .experience-details .seperator {
 		display: none;
 	}
+
 	#interests .left {
 		float: none;
 	}
+
 	#interests .right {
 		float: none;
 	}
+
 	#interests>* {
 		text-align: center;
 	}
+
 	#interests img {
 		width: 50%;
 		height: auto;
 		float: none !important;
 	}
+
 	#interests .interest-content {
 		padding: 20px 0px;
 	}
+
 	#contact {
 		padding-bottom: 60px;
 	}
+
 	#contact a .icon {
 		float: left;
 		margin-right: 10px;
@@ -686,6 +707,7 @@ hr {
 		-webkit-background-size: 150% auto;
 		background-attachment: scroll;
 	}
+
 	.jumbotron .lead {
 		display: none;
 	}
@@ -695,9 +717,11 @@ hr {
 	0% {
 		padding-top: 20px;
 	}
+
 	50% {
 		padding-top: 28px;
 	}
+
 	100% {
 		padding-top: 20px;
 	}
@@ -815,20 +839,24 @@ figure.effect:hover p {
 		border-left: 5px solid var(--Themecolor5);
 		text-align: left;
 	}
+
 	.timelineitem:nth-child(even) {
 		margin-right: 50%;
 		margin-left: 5px;
 		border-right: 5px solid var(--Themecolor5);
 		text-align: right;
 	}
+
 	.timelineitem {
 		width: 50%;
 		position: relative;
 		padding: 0px 10px 0px 10px;
 	}
+
 	.timelineitem:nth-child(odd):before {
 		left: -8px;
 	}
+
 	.timelineitem:nth-child(even):before {
 		right: -8px;
 	}
@@ -853,6 +881,7 @@ figure.effect:hover p {
 		padding: 5px;
 		position: relative;
 	}
+
 	.timelineitem:before {
 		left: -8px;
 	}
@@ -881,9 +910,11 @@ figure.effect:hover p {
 	.tdate {
 		font-size: 16px;
 	}
+
 	.ttitle {
 		font-size: 16px;
 	}
+
 	.tdesc {
 		font-size: 16px;
 	}
@@ -953,11 +984,12 @@ figure.effect:hover p {
 	.mdate {
 		font-size: 16px;
 	}
+
 	.mtitle {
 		font-size: 16px;
 	}
+
 	.mdesc {
 		font-size: 16px;
 	}
 }
-
