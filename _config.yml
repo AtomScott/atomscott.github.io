@@ -50,10 +50,10 @@ author:
 menu:
   - title:             Projects
     url:               /projects/
-  - title:             Blog
-    url:               /blog/
-  - title:             Posts
-    url:               /posts/
+  - title:             English Posts
+    url:               /posts/en
+  - title:             投稿(日本語)
+    url:               /posts/jp
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
