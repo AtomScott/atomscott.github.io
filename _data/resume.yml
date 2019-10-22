@@ -24,11 +24,21 @@ basics:
       username: "AtomScott"
       url: "https://www.linkedin.com/in/atom-scott-810963128/"
 work:
+  - company: "AIST Social AI Research Center"
+    position: "Internship"
+    website: "https://preferred.jp"
+    startDate: "2018-03-01"
+    endDate: ""
   - company: "Preferred Networks"
     position: "Internship"
     website: "https://preferred.jp"
     startDate: "2019-08-06"
     endDate: "2019-09-27"
+  - company: "Splyza, Inc."
+    position: "Internship"
+    website: "https://preferred.jp"
+    startDate: "2019-04-01"
+    endDate: "2019-06-30"
     # summary: >
     # highlights:
 education:
