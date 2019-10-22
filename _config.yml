@@ -50,11 +50,9 @@ author:
 menu:
   - title:             Projects
     url:               /projects/
-  - title:             Résumé
-    url:               /resume/
   - title:             Blog
     url:               /blog/
-  - title:             All Posts
+  - title:             Posts
     url:               /posts/
 
 # Add links to the footer.
