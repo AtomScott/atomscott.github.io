@@ -1,5 +1,6 @@
 # Config
 # ========================================================================================
+# theme: jekyll-theme-hydejack-pro
 
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
@@ -277,7 +278,7 @@ plugins:
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 # remote_theme: qwtel/hydejack
 
 # SEO Tag
