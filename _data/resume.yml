@@ -2,22 +2,14 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Richard Hendricks"
+  name: "Atom Scott"
   label: "Programmer"
-  picture: "/assets/icons/icon.png"
-  email: ""
-  phone: "(912) 555-4321"
+  picture: "/assets/img/profile.png"
+  email: "atom.james.scott _@_ gmail.com"
+  phone: ""
   website: "https://piedpiper.com"
   summary: >
-    Richard hails from Tulsa.
-    He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
-    Before starting Pied Piper, he worked for Hooli as a part time software developer.
-    While his work focuses on applied information theory,
-    mostly optimizing lossless compression schema of both the length-limited and adaptive variants,
-    his non-work interests range widely,
-    everything from quantum computing to chaos theory.
-    He could tell you about it, but THAT would NOT be a “length-limited” conversation!
-    Open `_data/resume.yml` to edit this text.
+    While studying data analysis methods at the University of Tsukuba Information Science, I am working as a data analyst for the Japans best university football club. I would like to acquire the necessary skills to connects sports and data science/IT. My goal is to conquer sports with data. I would like to build a culture within universityt sports where I see effective data usage, while I am enrolled in University of Tsukuba.
   location:
     address: "2712 Broadway St"
     postalCode: "CA 94115"
@@ -26,41 +18,26 @@ basics:
     region: "California"
   profiles:
     - network: "Twitter"
-      username: "RHendricksCEO"
-      url: ""
+      username: "@AtomJamesScott"
+      url: "https://twitter.com/AtomJamesScott"
     - network: "LinkedIn"
-      username: "Richard Hendricks"
-      url: ""
+      username: "AtomScott"
+      url: "https://www.linkedin.com/in/atom-scott-810963128/"
 work:
-  - company: "Pied Piper"
-    position: "CEO/President"
-    website: "https://piedpiper.com"
-    startDate: "2013-12-01"
-    endDate: ""
-    summary: >
-      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-      consistently fielded high Weisman Scores™ that are not merely competitive,
-      but approach the theoretical limit of lossless compression.
-    highlights:
-      - "Build an algorithm for artist to detect if their music was violating copy right infringement laws"
-      - "Successfully won Techcrunch Disrupt"
-      - "Optimized an algorithm that holds the current world record for Weisman Scores"
-volunteer:
-  - organization: "CoderDojo"
-    position: "Teacher"
-    website: "https://coderdojo.com/"
-    startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "Global movement of free coding clubs for young people."
-    highlights:
-      - "Awarded 'Teacher of the Month'"
+  - company: "Preferred Networks"
+    position: "Internship"
+    website: "https://preferred.jp"
+    startDate: "2019-08-06"
+    endDate: "2019-09-27"
+    # summary: >
+    # highlights:
 education:
-  - institution: "University of Oklahoma"
+  - institution: "University of Tsukuba"
     area: "Information Technology"
     studyType: "Bachelor"
-    startDate: "2011-06-01"
-    endDate: "2014-01-01"
-    gpa: "4.0"
+    startDate: "2016-04-01"
+    endDate: ""
+    # gpa: "4.0"
     courses:
       - "DB1101 - Basic SQL"
       - "CS2011 - Java Introduction"
