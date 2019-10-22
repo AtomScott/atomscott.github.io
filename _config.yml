@@ -274,8 +274,8 @@ plugins:
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
-remote_theme: qwtel/hydejack
+#theme: jekyll-theme-hydejack
+#remote_theme: qwtel/hydejack
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
@@ -349,3 +349,4 @@ compress_html:
 
 sass:
   style:               compressed
+
