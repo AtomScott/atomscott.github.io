@@ -51,9 +51,9 @@ menu:
   - title:             Projects
     url:               /projects/
   - title:             English Posts
-    url:               /posts/en
+    url:               /blog/en
   - title:             投稿(日本語)
-    url:               /posts/jp
+    url:               /blog/jp
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
