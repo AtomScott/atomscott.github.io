@@ -1,11 +1,10 @@
 # Config
 # ========================================================================================
-# theme: jekyll-theme-hydejack-pro
 
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://atomscott.github.io
+url:                   https://domain.tld
 
 # IMPORTANT: Set The "base URL" of your site.
 # When your site sits in a subdirectory, set to /<name of directory>
@@ -43,8 +42,8 @@ logo:                  /assets/icons/icon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
-  name:                Atom Scott
-  email:               atom.james.scott@gmail.com
+  name:                <firstname> <lastname>
+  email:               <mail@domain.tld>
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
