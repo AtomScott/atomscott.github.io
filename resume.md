@@ -2,19 +2,16 @@
 layout: resume
 title: Résumé*
 description: >
-  Hi, thanks for reading. Feel free to contact me if you have any good ideas! 
+  Hi, thanks for reading. Check my [academic website](atomscott.com) for all of my publications etc.
 hide_description: false
 menu: true
 order: 3
 left_column:
  - work
- - volunteer
  - education
- - awards
  - publications
- - references
 right_column:
  - languages
  - skills
- - interests
+ - awards
 ---
