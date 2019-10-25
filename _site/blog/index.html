@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v8.5.2 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+
+
+  
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Blog | Atom Scott</title>
+<meta name="generator" content="Jekyll v3.8.6" />
+<meta property="og:title" content="Blog" />
+<meta name="author" content="Atom Scott" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll." />
+<meta property="og:description" content="The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll." />
+<link rel="canonical" href="http://localhost:4000/blog/" />
+<meta property="og:url" content="http://localhost:4000/blog/" />
+<meta property="og:site_name" content="Atom Scott" />
+<meta property="og:image" content="http://localhost:4000/assets/img/projects/default.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/projects/default.jpg" />
+<meta property="twitter:title" content="Blog" />
+<meta name="twitter:site" content="@AtomJamesScott" />
+<meta name="twitter:creator" content="@Atom Scott" />
+<script type="application/ld+json">
+{"image":"http://localhost:4000/assets/img/projects/default.jpg","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/profile.jpg"},"name":"Atom Scott"},"url":"http://localhost:4000/blog/","headline":"Blog","author":{"@type":"Person","name":"Atom Scott"},"description":"The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="Football,Analytics and Science">
+  
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Atom Scott">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="Atom Scott">
+<meta name="msapplication-config" content="/assets/ieconfig.xml">
+
+
+<meta name="theme-color" content="rgb(67,83,106)">
+
+
+<meta name="generator" content="Hydejack v8.5.2" />
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Atom Scott" />
+
+
+
+<link rel="alternate" href="http://localhost:4000/blog/" hreflang="en">
+
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon.png">
+
+<link rel="manifest" href="/assets/manifest.json">
+
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+
+
+<link rel="dns-prefetch" href="/" id="_baseURL">
+<link rel="dns-prefetch" href="/sw.js" id="_hrefSW">
+<link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.js" id="_hrefKatexJS">
+<link rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css" id="_hrefKatexCSS">
+<link rel="dns-prefetch" href="/assets/bower_components/katex/dist/contrib/copy-tex.min.js" id="_hrefKatexCopyJS">
+<link rel="dns-prefetch" href="/assets/bower_components/katex/dist/contrib/copy-tex.min.css" id="_hrefKatexCopyCSS">
+<link rel="dns-prefetch" href="/assets/img/swipe.svg" id="_hrefSwipeSVG">
+
+
+
+<link rel="dns-prefetch" href="https://atomscott.disqus.com" id="_hrefDisqus">
+
+
+<script>
+!function(e,t){"use strict";function n(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}e.loadJS=function(e,o){var r=t.createElement("script");r.src=e,o&&n(r,"load",o,{once:!0});var a=t.scripts[0];return a.parentNode.insertBefore(r,a),r},e._loaded=!1,e.loadJSDeferred=function(o,r){function a(){e._loaded=!0,r&&n(c,"load",r,{once:!0});var o=t.scripts[0];o.parentNode.insertBefore(c,o)}var c=t.createElement("script");return c.src=o,e._loaded?a():n(e,"load",a,{once:!0}),c},e.setRel=e.setRelStylesheet=function(e){function o(){this.rel="stylesheet"}n(t.getElementById(e),"load",o,{once:!0})}}(window,document);
+;
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+;
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+;
+!function(w, d) {
+  w._noPushState = false;
+  w._noDrawer = false;
+}(window, document);
+</script>
+
+<!--[if gt IE 8]><!---->
+
+
+
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="/assets/css/hydejack-8.5.2.css">
+  <link rel="stylesheet" href="/assets/icomoon/style.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400|Noto+Sans:400,400i,700,700i&display=swap">
+  
+
+
+  <style id="_pageStyle">
+
+.content a:not(.btn){color:#4fb1ba;border-color:rgba(79,177,186,0.2)}.content a:not(.btn):hover{border-color:#4fb1ba}:focus{outline-color:#4fb1ba !important}.btn-primary{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:focus,.btn-primary.focus,.form-control:focus,.form-control.focus{box-shadow:0 0 0 3px rgba(79,177,186,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#409ba3;border-color:#409ba3}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#409ba3;border-color:#409ba3}::selection{color:#fff;background:#4fb1ba}::-moz-selection{color:#fff;background:#4fb1ba}
+
+</style>
+
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body class="no-color-transition dark-mode">
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <div class="nav-btn-bar">
+      <span class="sr-only">Jump to:</span>
+      <a id="_menu" class="nav-btn no-hover fl" href="#_navigation">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <!-- <a id="_search" class="nav-btn no-hover fl" href="#_search">
+        <span class="sr-only">Search</span>
+        <span class="icon-search"></span>
+      </a>
+      <form action="https://duckduckgo.com/" method="GET">
+        <div class="form-group fr">
+          <label class="sr-only" for="_search">Search</label>
+          <input id="_search" name="q" class="form-control" type="search" />
+        </div>
+        <input type="hidden" name="q" value="site:hydejack.com" />
+        <input type="hidden" name="ia" value="web" />
+      </form> -->
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+
+<hy-push-state
+  replace-ids="_main"
+  link-selector="a[href]:not([href*='/assets/']):not(.external):not(.no-push-state)"
+  duration="250"
+  script-selector="script:not([type^='math/tex'])"
+  prefetch
+>
+  
+    <main
+  id="_main"
+  class="content fade-in layout-blog"
+  role="main"
+  data-color="rgb(79,177,186)"
+  data-theme-color="rgb(67,83,106)"
+  
+    data-image="/assets/img/pitch.jpg"
+    data-overlay
+  
+  >
+  
+
+
+  
+    
+
+
+
+
+<article id="post-blog-jp-サッカーで筑波大学情報科学類にAC入試で合格するには" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title">
+      <a href="/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/" class="flip-title">
+        サッカーで筑波大学情報科学類にAC入試で合格するには
+      </a>
+    </h1>
+
+    <p class="post-date heading">
+      
+      <time datetime="2019-10-23T00:00:00+09:00">23 Oct 2019</time>
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+in <a href="/blog/jp/" class="flip-title">Japanese Posts</a>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+
+    
+    
+
+    
+
+
+
+  
+    <p class="message" >
+      筑波大学のAC入試に挑戦したい後輩から連絡があったことをきっかけに自分の経験まとめてみようと思います。
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>筑波大学のAC入試に挑戦したい後輩から連絡があったことをきっかけに自分の経験まとめてみようと思います。</p>
+
+<p>※もともと自分のHPにあった記事です。</p>
+
+<h3 id="ac入試とは何か">AC入試とは何か</h3>
+
+<blockquote>
+  <p>（AC入試とは）<br />
+志願者の主体的で継続的な取り組み・問題解決能力に着眼点を置いた従来のテスト型入試と異なるタイプの入試。</p>
+</blockquote>
+
+<figure embedded-service="slideshare" contenteditable="false" data-identifier="DvwDYWSNLfmmUm" name="iTIlJ" embedded-content-key="emb9bc18fecaa9e">
+
+<div data-name="embedContainer">
+
+<div data-embed-service="slideshare"><iframe width="620" height="517" src="https://www.slideshare.net/slideshow/embed_code/key/DvwDYWSNLfmmUm" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen=""></iframe></div>
+
+</div>
+
+</figure>
+
+<h3 id="ac入試の流れ">AC入試の流れ</h3>
+
+<p><strong>第1次選考</strong>（書類審査）<br />
+・自己推薦書と志望理由書が必要</p>
+
+<p><strong>第2次選考</strong>（面接・口述試験）<br />
+・3対1で志望理由などに関して質問を受ける</p>
+
+<p>それ以外の情報は筑波大学のホームページから十分に得られるはずです。</p>
+
+<p><a href="http://ac.tsukuba.ac.jp/examination/leaf">AC入試・特別入試ガイドブック</a><br />
+<a href="http://ac.tsukuba.ac.jp/examination/report">入学者の「合格まで」と「入学まで」</a><br />
+※↑自分は書いていないです。気がついたら締め切りすぎてました（笑</p>
+
+<h3 id="なぜ筑波大学か"><strong>なぜ筑波大学か</strong></h3>
+
+<p>高校生の時に熱中していたものといえば、サッカーと音楽ぐらいで、それ以外は中途半端でした。そんな感じだから将来何がしたいかという具体的なイメージはありません。</p>
+
+<p>しかし、国際バカロレア課程の最終プロジェクトのPersonal Projectでサッカーのトレーニングについてまとめた本を書き、より科学的にスポーツを見るようになったことで人生の中でも転換期だったと感じてます。</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+
+<p>高校２年生のときにはまた新しい自主研究をするチャンスを得て、そのときに初めて科学的な手法でサッカーを『研究』したと思います。</p>
+
+<p>端的にいえば、筑波大学の浅井先生の研究を真似して、サッカーキックの動作時に各関節の速度を計測しました。</p>
+
+<p>ただ計測には特別なプログラムを使用せず、<strong>計測用のプログラムまで書いた</strong>のがポイントです。<br />
+→ここで書いたプログラムをブラッシュアップしてＡＣ入試に提出しました。</p>
+
+<p>こういう経験を経て，自分は大学でスポーツをより科学的にみたいと思ったのです。</p>
+
+<p>そのことを学芸大学の体育の新海先生に相談したところ、「（スポーツ×ITがしたいのであれば）国立なら筑波大学しかないよ」と言われ、筑波大学を目指すことになりました。</p>
+
+<h3 id="なぜ情報科学類か"><strong>なぜ情報科学類か</strong></h3>
+
+<p><strong>高校２年生のとき</strong>（新海先生に相談する前）</p>
+
+<p>体育専門学群のオープンキャンパスに行きましたが、プロや教師を目指す学生が多いと感じてちょっと違う気がしました。</p>
+
+<p>大学で何をしたいかも決まっていなかったので、他の大学のオープンキャンパスには行ってません。あんまり将来のことを考えていないのが分かりますね（笑</p>
+
+<p><strong>高校３年生のとき</strong></p>
+
+<p>関節速度計測用に初めてプログラムを書き始めて、プログラムを書くことで面倒な作業を効率化・自動化できることを知り、感心していました。</p>
+
+<p>また、新海先生が情報科学類でもいいんじゃない？とおっしゃってたこともあり、情報科学類に行きたいと思い始めました。</p>
+
+<p>ただ、オープンキャンパスが終わっていたので（高3の8月頃かな？）に情報科学類で唯一スポーツ関連の研究をしていた山際先生にアポを取り、話を聞きに行きました。</p>
+
+<p>そのときの山際先生の対応が素晴らしく(笑)、情報科学類に決定したという流れです。</p>
+
+<p>ただし、やっぱり体育専門に行ったほうがスポーツに特化できるという思いもあり、すごく迷って最終的には情報科学類のほうが挑戦的に見え、そっちにした覚えがあります。</p>
+
+<h3 id="第1次選考書類審査">第1次選考（書類審査）</h3>
+
+<p><strong>志望理由書</strong></p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+
+<p>いままでずっとサッカーをプレーしてきた自分がなぜ情報科学類に入りたいのかを正直に書いたと思います。</p>
+
+<p>読み返すと偉人みたいな口調で笑えるけど、いまでも書きそうな文面になっているし、全然軸がぶれてないと思います。</p>
+
+<p>（スポーツ革命ってなんなんですかね笑）</p>
+
+<p><strong>自己推薦書</strong></p>
+
+<p>以下の書類をまとめて提出しました。</p>
+
+<p>プログラムのソースコードに自信なかったし、変になぜＣ＃で書いたんですか？とか聞かれたら困るので提出していません。</p>
+
+<p>その代わりに、書いたプログラムの解説動画を作って提出しました。</p>
+
+<figure embedded-service="youtube" contenteditable="false" data-identifier="MGiv-hdx-5M" name="0DHth" embedded-content-key="emb4381c3638389">
+
+<div data-name="embedContainer">
+
+<div data-embed-service="youtube"><iframe width="500" height="375" src="//www.youtube.com/embed/MGiv-hdx-5M" frameborder="0" allowfullscreen=""></iframe></div>
+
+</div>
+
+</figure>
+
+<p>フットボーラーズマニュアル .PDF（CD1）<br />
+画像測定と表計算お用いた運動解析ツールの開発　 PART1<br />
+画像測定と表計算お用いた運動解析ツールの開発 PART2<br />
+発表会に用いたプレゼンテーション資料<br />
+各賞状や受賞を証明するもの<br />
+BWFCの解説動画 （CD2）</p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /></p>
+
+<h3 id="第2次選考面接口述試験">第2次選考（面接・口述試験）</h3>
+
+<p>１年しかプログラムを書いてない自分が１次試験通過できるのかが心配だったが、そこだけクリアすれば合格できると考えていました。</p>
+
+<p>面接に関する対策はばっちりで合格者のブログを探してオススメの本だったり、自分で予想問題集を作ったりしてるので、共有しますね。</p>
+
+<p>あとは高校の先生に模擬面接をやってもらったので完璧でした。</p>
+
+<p>質問内容はあまり覚えていませんが、最後の質問は</p>
+
+<p>Them「筑波大にはいってやりたいことがいっぱいあるようですが，大学で全部やるにはなにが一番大事だと思いますか？」<br />
+Me「．．Vision.」</p>
+
+<p>って言ってかっこつけた覚えはあります 笑</p>
+
+<h3 id="予想問題集聞かれたのは"><strong>予想問題集（聞かれたのは＊）</strong></h3>
+
+<p><strong>ジェネラル</strong></p>
+
+<p>＊今回提出した自己推薦書の内容を5分で説明してください<br />
+＊なぜ情報科学類を志望したのか<br />
+＊将来の進路<br />
+もし、20年前のインターネットが無い時代に大学に入学するとしたら、どこへ進学したいか<br />
+＊筑波大についてどう思うか<br />
+どんな高校生活だったか<br />
+高校生活で頑張ったこと<br />
+長所と短所<br />
+短所で失敗した経験<br />
+最近感動したこと<br />
+最近読んだ本とその感想<br />
+オープンキャンパスに来たことがあるか<br />
+部活動以外で学校生活で心に残っていること</p>
+
+<p><strong>学校の勉強に関して</strong></p>
+
+<p>＊英語は得意ですか<br />
+学校の成績<br />
+勉強をする際に工夫したこと<br />
+＊得意、不得意科目<br />
+＊数学は得意か（実際には好きか）</p>
+
+<p><strong>プログラミングに関して</strong></p>
+
+<p>プログラミングではどのような言語を用いていたのか<br />
+プログラミングはできるか</p>
+
+<p><strong>部活に関して</strong></p>
+
+<p>部活動の具体的内容<br />
+部活動で力を入れたこと<br />
+部活動で役職についていたか</p>
+
+<p><strong>自己推薦書に関して</strong></p>
+
+<p>＊課題として研究した内容は誰かに手伝ってもらったのか（did you really do this yourself!?）<br />
+人工知能の研究はどのような学問を必要とするか<br />
+どのような人工知能を作りたいか、それは社会に対してどのようなメリットがある</p>
+
+<p><strong>面接の様子</strong></p>
+
+<blockquote>
+  <p>|———————————————————|<br />
+|       ◯ (私)      |
+|    |=====|        |<br />
+| 　                |<br />
+| |==============|  |<br />
+| ◯ ◯ ◯ （試験官3人)  |    <br />
+|——————— /(ドア) —   |<br />
+<a href="https://blog.ytn86.net/2014/09/tsukuba-ac-experience/">筑波大学AC入試で合格したときのこと ytn.outより</a></p>
+</blockquote>
+
+<p>上で参照しているサイトには「面接を楽しんだ人は、大体合格している。私もその一人である」と書いてあるが、#me tooです。</p>
+
+<h3 id="最後に">最後に</h3>
+
+<p>高校の成績は必要か？<br />
+→いらない</p>
+
+<p>AC入試でよかったか？<br />
+→一般だったらたぶん浪人せずに情報科学類に入れてないと思う</p>
+
+<p>筑波大学でよかったか？<br />
+→ベストな判断だったと思う。筑波が東京にあったらより良かった。</p>
+
+<p>これから受験する人に向けていうことは？<br />
+→ストーリーをつくることが一番大事。</p>
+
+
+    
+    
+    <footer>
+      <p class="read-more">
+        Continue reading <a class="heading flip-title" href="/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/">サッカーで筑波大学情報科学類にAC入試で合格するには</a>
+
+      </p>
+    </footer>
+  
+</article>
+
+  
+    
+
+
+
+
+<article id="post-blog-en-Welcome" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title">
+      <a href="/blog/en/2019-10-23-Welcome/" class="flip-title">
+        Welcome to my new website
+      </a>
+    </h1>
+
+    <p class="post-date heading">
+      
+      <time datetime="2019-10-23T00:00:00+09:00">23 Oct 2019</time>
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+in <a href="/blog/en/" class="flip-title">English Posts</a>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </p>
+
+    
+    
+
+    
+
+
+
+  
+    <p class="message" >
+      Hi, it’s just me.
+
+    </p>
+  
+
+
+  </header>
+
+  
+    <p>Hi, I’ve moved my website to github pages so I don’t have to worry about hosting services!</p>
+
+<p>With the fees spared from hosting, instead of saving it up like a sensible person, I bought a new cool website theme called Hydejack. This lets me write a blog as well so I am very pleased with it.</p>
+
+<p>A research blog or something similar would be very nice to write.</p>
+
+
+    
+    
+    <footer>
+      <p class="read-more">
+        Continue reading <a class="heading flip-title" href="/blog/en/2019-10-23-Welcome/">Welcome to my new website</a>
+
+      </p>
+    </footer>
+  
+</article>
+
+  
+
+  <h2 class="sr-only">Pagination</h2>
+<nav class="pagination heading clearfix" role="navigation">
+  <ul>
+    <li class="pagination-item older" >
+      
+      
+      
+  <span class=" ">Older</span>
+
+
+    </li>
+    <li class="pagination-item newer" >
+      
+      
+      
+  <span class=" ">Newer</span>
+
+
+    </li>
+  </ul>
+</nav>
+
+
+
+  
+
+  
+<footer role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2018. All rights reserved.
+</small></p>
+  
+  
+  
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+    <hy-drawer
+  class=""
+  align="left"
+  threshold="10"
+  touch-events
+  prevent-default
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+    <div class="sidebar-bg sidebar-overlay" style="background-color:rgb(67,83,106);background-image:url(/assets/img/pitch.jpg)"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        
+          <a class="no-hover" href="/" tabindex="-1">
+            <img src="/assets/img/profile.jpg" class="avatar" alt="Atom Scott" data-ignore />
+          </a>
+        
+        <h2 class="h1"><a href="/">Atom Scott</a></h2>
+        
+        
+          <p class="">
+            Football, Analytics and Science
+
+          </p>
+        
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_navigation"
+          href="/projects/"
+          class="sidebar-nav-item"
+          
+        >
+          Projects
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/blog/en"
+          class="sidebar-nav-item"
+          
+        >
+          English Posts
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/blog/jp"
+          class="sidebar-nav-item"
+          
+        >
+          投稿(日本語)
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </nav>
+
+      
+
+      <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://twitter.com/AtomJamesScott" title="Twitter" class="no-mark-external">
+      <span class="icon-twitter"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
+  </li>
+
+
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="https://github.com/atomscott" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+      </div>
+    </div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+  
+</hy-push-state>
+
+<!--[if gt IE 10]><!---->
+
+  <script nomodule>!function(){var e=document.createElement("script");if(!("noModule"in e)&&"onbeforeload"in e){var t=!1;document.addEventListener("beforeload",function(n){if(n.target===e)t=!0;else if(!n.target.hasAttribute("nomodule")||!t)return;n.preventDefault()},!0),e.type="module",e.src=".",document.head.appendChild(e),e.remove()}}();
+</script>
+  <script type="module" src="/assets/js/hydejack-8.5.2.js"></script>
+  <script nomodule src="/assets/js/hydejack-legacy-8.5.2.js" defer></script>
+  
+
+  
+  <script>!function(w, d) {
+    w.ga=w.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+    /**/
+      ga('create', 'UA-79863352-1', 'auto');
+    /**/
+
+    var pushStateEl = d.getElementsByTagName('hy-push-state')[0];
+    var timeoutId;
+    pushStateEl.addEventListener('hy-push-state-load', function() {
+      w.clearTimeout(timeoutId);
+      timeoutId = w.setTimeout(function() {
+        ga('set', 'page', w.location.pathname);
+        ga('send', 'pageview');
+      }, 500);
+    });
+
+    d.addEventListener('hy--cookies-ok', function () {
+      w.ga(function(tracker) {
+        w.ga("set", "anonymizeIp", undefined);
+        localStorage && localStorage.setItem("ga--client-id", tracker.get("clientId"));
+      });
+    });
+
+    w.loadJSDeferred('https://www.google-analytics.com/analytics.js');
+  }(window, document);</script>
+
+
+  <script type="module">
+    if ('serviceWorker' in navigator) {
+      /**/
+      navigator.serviceWorker.getRegistration()
+        .then(r => r.unregister())
+        .catch(() => {});
+      /**/
+    }
+  </script>
+
+<!--<![endif]-->
+
+
+
+
+<h2 class="sr-only" hidden>Templates (for web app):</h2>
+
+<template id="_animation-template" hidden>
+  <div class="animation-main fixed-top">
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+<template id="_loading-template" hidden>
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+<template id="_error-template" hidden>
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+<template id="_forward-template" hidden>
+  <button id="_forward" class="forward nav-btn no-hover fl">
+    <span class="sr-only">Forward</span>
+    <span class="icon-arrow-right2"></span>
+  </button>
+</template>
+
+<template id="_back-template" hidden>
+  <button id="_back" class="back nav-btn no-hover fl">
+    <span class="sr-only">Back</span>
+    <span class="icon-arrow-left2"></span>
+  </button>
+</template>
+
+<template id="_permalink-template" hidden>
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="icon-link"></span>
+  </a>
+</template>
+
+
+
+
+
+</body>
+</html>

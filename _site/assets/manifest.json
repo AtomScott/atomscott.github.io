@@ -1,0 +1,43 @@
+{
+  "lang": "en",
+  "name": "Atom Scott",
+  "short_name": "Atom Scott",
+  "description": "Atom Scott’s personal website. I am a ML/DL research student with a thing for sports.",
+  "start_url": "/?utm_source=homescreen",
+  "theme_color": "rgb(67,83,106)",
+  "background_color": "#fff",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/assets/icons/icon@0,25x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/assets/icons/icon@0,5x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/assets/icons/icon@0,75x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/assets/icons/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/icons/icon@2x.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/assets/icons/icon@3x.png",
+      "type": "image/png",
+      "sizes": "576x576"
+    }
+  ]
+}
