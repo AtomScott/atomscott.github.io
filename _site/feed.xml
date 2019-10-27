@@ -1,9 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-10-25T12:05:34+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Atom Scott</title><subtitle>Atom Scott's personal website. I am a ML/DL research student with a thing for sports.
-</subtitle><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><entry><title type="html">Welcome to my new website</title><link href="http://localhost:4000/blog/en/2019-10-23-Welcome/" rel="alternate" type="text/html" title="Welcome to my new website" /><published>2019-10-23T00:00:00+09:00</published><updated>2019-10-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/Welcome</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-10-23-Welcome/">&lt;p&gt;Hi, I’ve moved my website to github pages so I don’t have to worry about hosting services!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-10-27T17:07:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Atom Scott</title><subtitle>Atom Scott's personal website. I am a ML/DL research student with a thing for sports.
+</subtitle><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><entry><title type="html">Predicting The Future In Sports With Deep Learning</title><link href="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" rel="alternate" type="text/html" title="Predicting The Future In Sports With Deep Learning" /><published>2019-10-27T00:00:00+09:00</published><updated>2019-10-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/Guide-to-traj-2019-Sports</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#overview&quot; id=&quot;markdown-toc-overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#diverse-generation-for-multi-agent-sports-games-paper&quot; id=&quot;markdown-toc-diverse-generation-for-multi-agent-sports-games-paper&quot;&gt;Diverse Generation for Multi-Agent Sports Games [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper&quot; id=&quot;markdown-toc-stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper&quot;&gt;Stochastic Prediction of Multi-Agent Interactions from Partial Observations [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#generating-multi-agent-trajectories-using-programmatic-weak-supervision-paper&quot; id=&quot;markdown-toc-generating-multi-agent-trajectories-using-programmatic-weak-supervision-paper&quot;&gt;Generating Multi-Agent Trajectories using Programmatic Weak Supervision [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#generative-multi-agent-behavioral-cloning-paper&quot; id=&quot;markdown-toc-generative-multi-agent-behavioral-cloning-paper&quot;&gt;Generative Multi-Agent Behavioral Cloning [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#where-will-they-go-predicting-fine-grained-adversarial-multi-agent-motion-using-conditional-variational-autoencoders-eccv-2018-paper&quot; id=&quot;markdown-toc-where-will-they-go-predicting-fine-grained-adversarial-multi-agent-motion-using-conditional-variational-autoencoders-eccv-2018-paper&quot;&gt;Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#coordinated-multi-agent-imitation-learning-paper&quot; id=&quot;markdown-toc-coordinated-multi-agent-imitation-learning-paper&quot;&gt;Coordinated Multi-Agent Imitation Learning [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#generating-long-term-trajectories-using-deep-hierarchical-networks-paper&quot; id=&quot;markdown-toc-generating-long-term-trajectories-using-deep-hierarchical-networks-paper&quot;&gt;Generating long-term trajectories using deep hierarchical networks [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#learning-fine-grained-spatial-models-for-dynamic-sports-play-prediction-paper&quot; id=&quot;markdown-toc-learning-fine-grained-spatial-models-for-dynamic-sports-play-prediction-paper&quot;&gt;Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#generative-modeling-of-multimodal-multi-human-behavior-paper&quot; id=&quot;markdown-toc-generative-modeling-of-multimodal-multi-human-behavior-paper&quot;&gt;Generative Modeling of Multimodal Multi-Human Behavior [paper]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;With the fees spared from hosting, instead of saving it up like a sensible person, I bought a new cool website theme called Hydejack. This lets me write a blog as well so I am very pleased with it.&lt;/p&gt;
+&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
-&lt;p&gt;A research blog or something similar would be very nice to write.&lt;/p&gt;</content><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><summary type="html">Hi, I’ve moved my website to github pages so I don’t have to worry about hosting services! With the fees spared from hosting, instead of saving it up like a sensible person, I bought a new cool website theme called Hydejack. This lets me write a blog as well so I am very pleased with it. A research blog or something similar would be very nice to write.</summary></entry><entry><title type="html">サッカーで筑波大学情報科学類にAC入試で合格するには</title><link href="http://localhost:4000/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/" rel="alternate" type="text/html" title="サッカーで筑波大学情報科学類にAC入試で合格するには" /><published>2019-10-23T00:00:00+09:00</published><updated>2019-10-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/jp/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF</id><content type="html" xml:base="http://localhost:4000/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/">&lt;p&gt;筑波大学のAC入試に挑戦したい後輩から連絡があったことをきっかけに自分の経験まとめてみようと思います。&lt;/p&gt;
+&lt;p&gt;There is an &lt;a href=&quot;https://github.com/jiachenli94/Awesome-Interaction-aware-Trajectory-Prediction#sport-players-1&quot;&gt;awesome github page&lt;/a&gt; for pedestrian trajectory prediction with a section specifically for papers in sport.&lt;/p&gt;
+
+&lt;p&gt;Below are summaries of each post describing the main ideas and methods used.&lt;/p&gt;
+
+&lt;h2 id=&quot;diverse-generation-for-multi-agent-sports-games-paper&quot;&gt;Diverse Generation for Multi-Agent Sports Games [&lt;a href=&quot;http://openaccess.thecvf.com/content_CVPR_2019/html/Yeh_Diverse_Generation_for_Multi-Agent_Sports_Games_CVPR_2019_paper.html&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper&quot;&gt;Stochastic Prediction of Multi-Agent Interactions from Partial Observations [&lt;a href=&quot;http://arxiv.org/abs/1902.09641v1&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;generating-multi-agent-trajectories-using-programmatic-weak-supervision-paper&quot;&gt;Generating Multi-Agent Trajectories using Programmatic Weak Supervision [&lt;a href=&quot;http://arxiv.org/abs/1803.07612v6&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;generative-multi-agent-behavioral-cloning-paper&quot;&gt;Generative Multi-Agent Behavioral Cloning [&lt;a href=&quot;http://www.stephanzheng.com/pdf/Zhan_Zheng_Lucey_Yue_Generative_Multi_Agent_Behavioral_Cloning.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;where-will-they-go-predicting-fine-grained-adversarial-multi-agent-motion-using-conditional-variational-autoencoders-eccv-2018-paper&quot;&gt;Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. [&lt;a href=&quot;http://openaccess.thecvf.com/content_ECCV_2018/papers/Panna_Felsen_Where_Will_They_ECCV_2018_paper.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;coordinated-multi-agent-imitation-learning-paper&quot;&gt;Coordinated Multi-Agent Imitation Learning [&lt;a href=&quot;http://arxiv.org/abs/1703.03121v2&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;generating-long-term-trajectories-using-deep-hierarchical-networks-paper&quot;&gt;Generating long-term trajectories using deep hierarchical networks [&lt;a href=&quot;https://arxiv.org/abs/1706.07138&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;learning-fine-grained-spatial-models-for-dynamic-sports-play-prediction-paper&quot;&gt;Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction [&lt;a href=&quot;https://ieeexplore.ieee.org/document/7023384/footnotes#footnotes&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+
+&lt;h2 id=&quot;generative-modeling-of-multimodal-multi-human-behavior-paper&quot;&gt;Generative Modeling of Multimodal Multi-Human Behavior [&lt;a href=&quot;https://arxiv.org/pdf/1803.02015.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;</content><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><summary type="html">Predicting The Future In Sports With Deep Learning Predicting The Future In Sports With Deep Learning Overview Diverse Generation for Multi-Agent Sports Games [paper] Stochastic Prediction of Multi-Agent Interactions from Partial Observations [paper] Generating Multi-Agent Trajectories using Programmatic Weak Supervision [paper] Generative Multi-Agent Behavioral Cloning [paper] Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. [paper] Coordinated Multi-Agent Imitation Learning [paper] Generating long-term trajectories using deep hierarchical networks [paper] Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction [paper] Generative Modeling of Multimodal Multi-Human Behavior [paper] Overview There is an awesome github page for pedestrian trajectory prediction with a section specifically for papers in sport. Below are summaries of each post describing the main ideas and methods used. Diverse Generation for Multi-Agent Sports Games [paper] Stochastic Prediction of Multi-Agent Interactions from Partial Observations [paper] Generating Multi-Agent Trajectories using Programmatic Weak Supervision [paper] Generative Multi-Agent Behavioral Cloning [paper] Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. [paper] Coordinated Multi-Agent Imitation Learning [paper] Generating long-term trajectories using deep hierarchical networks [paper] Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction [paper] Generative Modeling of Multimodal Multi-Human Behavior [paper]</summary></entry><entry><title type="html">Pedestrian trajectory prediction with deep learning</title><link href="http://localhost:4000/blog/en/2019-10-25-pedestrian-trajectory/" rel="alternate" type="text/html" title="Pedestrian trajectory prediction with deep learning" /><published>2019-10-25T00:00:00+09:00</published><updated>2019-10-25T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/pedestrian-trajectory</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-10-25-pedestrian-trajectory/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-trajectory-prediction&quot; id=&quot;markdown-toc-what-is-trajectory-prediction&quot;&gt;What is Trajectory Prediction?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-is-it-hard&quot; id=&quot;markdown-toc-why-is-it-hard&quot;&gt;Why is it hard?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#classical-approach&quot; id=&quot;markdown-toc-classical-approach&quot;&gt;Classical Approach&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#papers-covered&quot; id=&quot;markdown-toc-papers-covered&quot;&gt;Papers Covered&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#social-force-model-for-pedestrian-dynamics-paper&quot; id=&quot;markdown-toc-social-force-model-for-pedestrian-dynamics-paper&quot;&gt;Social force model for pedestrian dynamics [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#activity-forecasting-paper&quot; id=&quot;markdown-toc-activity-forecasting-paper&quot;&gt;Activity Forecasting [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#socially-aware-large-scale-crowd-forecasting-paper&quot; id=&quot;markdown-toc-socially-aware-large-scale-crowd-forecasting-paper&quot;&gt;Socially-aware Large-scale Crowd Forecasting [paper]&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#deep-learning-approach&quot; id=&quot;markdown-toc-deep-learning-approach&quot;&gt;Deep Learning Approach&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#papers-covered-1&quot; id=&quot;markdown-toc-papers-covered-1&quot;&gt;Papers Covered&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper&quot; id=&quot;markdown-toc-social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper&quot;&gt;Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [paper]&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#results&quot; id=&quot;markdown-toc-results&quot;&gt;Results&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#comments&quot; id=&quot;markdown-toc-comments&quot;&gt;Comments&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;※ Images are from the papers described unless source is made clear otherwise.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-is-trajectory-prediction&quot;&gt;What is Trajectory Prediction?&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Trajcetory Prediction&lt;/strong&gt; is challenge of predicting a single/multi persons movement through ground level 2D space from given information (video frames or trajectory coordinates).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Trajectory Prediction from Coordinates&lt;/strong&gt; - Estimate future trajectories using 2D coordinates.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Trajectory Prediction from Video&lt;/strong&gt; - Estimate future trajectories using RGB images from video.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/peek.gif&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;why-is-it-hard&quot;&gt;Why is it hard?&lt;/h2&gt;
+
+&lt;p&gt;The difficulty in predicting trajectories arises from the complexity of human behaviour. Movement is rarely driven solely by destination but also by the existence of surrounding agents (social relations between agents, social rules and norms) and environmental factors (topology, geometry, semantics etc.).&lt;/p&gt;
+
+&lt;p&gt;For example, think of a pedestrian walking from point A to point B. It’s raining and there could be a puddle. It is obvious to us that the pedestrian is likely to walk around the puddle but such semantic information is not well known to the machine.&lt;/p&gt;
+
+&lt;p&gt;Another example could be of 2 people walking towards each other in opposite directions. How does the computer infer the distance a pedestrian deviates for his path to make way for the other person? Such seemingly trivial factors are reminiscent of &lt;a href=&quot;https://en.wikipedia.org/wiki/Moravec%27s_paradox&quot;&gt;Moravec’s paradox&lt;/a&gt; and are the cause of difficulty.&lt;/p&gt;
+
+&lt;h2 id=&quot;classical-approach&quot;&gt;Classical Approach&lt;/h2&gt;
+
+&lt;p&gt;The traditional Social Force model was pioneered by Helbing and Molnar. This method modelled attractive and repulsive forces between pedestrians to describe pedestrian behaviour. Similar approaches such as continuum dynamics and modelling with the Gaussian processes were also used.&lt;/p&gt;
+
+&lt;p&gt;Using well-engineered features is also common in improving tracking and forecasting. Alahi et. al. presented a social affinity feature by learning from human trajectories in crowds.&lt;/p&gt;
+
+&lt;p&gt;Another line of work from Kitani et. al. uses Inverse Reinforcement Learning to predict human paths in scenes.&lt;/p&gt;
+
+&lt;h3 id=&quot;papers-covered&quot;&gt;Papers Covered&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#social-force-model-for-pedestrian-dynamics-paper&quot;&gt;Social force model for pedestrian dynamics&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#activity-forecasting-paper&quot;&gt;Activity Forecasting&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#socially-aware-large-scale-crowd-forecasting-paper&quot;&gt;Socially-aware Large-scale Crowd Forecasting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt; I must say that the latter 2 papers are relatively recent and may not be considered classical!&lt;/p&gt;
+
+&lt;h2 id=&quot;social-force-model-for-pedestrian-dynamics-paper&quot;&gt;Social force model for pedestrian dynamics &lt;a href=&quot;https://www.researchgate.net/publication/1947096_Social_Force_Model_for_Pedestrian_Dynamics?enrichId=rgreq-d0f2bf8feb2f3bfc4d0db72c2d8c4e2e-XXX&amp;amp;enrichSource=Y292ZXJQYWdlOzE5NDcwOTY7QVM6MTAyNjMzMjE3OTg2NTY0QDE0MDE0ODEwNzQ3NTE%3D&amp;amp;el=1_x_2&amp;amp;_esc=publicationCoverPdf&quot;&gt;[paper]&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;In this paper, the behaviour of the pedestrian is thought to be effected by repulsive forces (strangers, walls, etc.) and attractive forces (friends, street artists, etc.).&lt;/p&gt;
+
+&lt;p class=&quot;figure&quot;&gt;&lt;img src=&quot;/assets/img/blog/2019-10-26-22-33-58.png&quot; alt=&quot;&quot; class=&quot;lead&quot; data-width=&quot;800&quot; data-height=&quot;100&quot; /&gt;
+Types of social forces.&lt;/p&gt;
+
+&lt;p class=&quot;figure&quot;&gt;&lt;img src=&quot;/assets/img/blog/2019-10-26-22-34-33.png&quot; alt=&quot;&quot; class=&quot;lead&quot; data-width=&quot;800&quot; data-height=&quot;100&quot; /&gt;
+Sum of all effects to the pedestrians velocity.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The main idea&lt;/strong&gt; is that a pedestrian would walk in a straight line from A to B at a desired speed if there were no external forces, but will deviate from the straight line by repulsive forces and attractive forces.&lt;/p&gt;
+
+&lt;p&gt;Using the model described above, we can simulate the movement of pedestrians by assuming the desired speeds to be, for example, gaussian distributed with mean &lt;code class=&quot;MathJax_Preview&quot;&gt;v_0 = 1.34ms^{-1}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;v_0 = 1.34ms^{-1}&lt;/script&gt; and standard deviation &lt;code class=&quot;MathJax_Preview&quot;&gt;\sqrt{\theta} = 0.26ms^{-1}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\sqrt{\theta} = 0.26ms^{-1}&lt;/script&gt; (as in the paper) or simply a constant &lt;code class=&quot;MathJax_Preview&quot;&gt;v_\alpha = 1.5ms^{-1}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;v_\alpha = 1.5ms^{-1}&lt;/script&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;activity-forecasting-paper&quot;&gt;Activity Forecasting &lt;a href=&quot;https://www.ri.cmu.edu/pub_files/2012/10/Kitani-ECCV2012.pdf&quot;&gt;[paper]&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;In contrast to the Social Forces paper, where coordinates were used as input, here the paths are predicted given an image as input.&lt;/p&gt;
+
+&lt;p class=&quot;figure&quot;&gt;&lt;img src=&quot;/assets/img/blog/2019-10-26-23-21-04.png&quot; alt=&quot;&quot; class=&quot;lead&quot; data-width=&quot;800&quot; data-height=&quot;100&quot; /&gt;
+Example of plausible paths and destinations from noisy vision input.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The main idea&lt;/strong&gt; is 1. incorporate information of physical scene features and human preferences towards them (e.g. A person is more likely to walk on a side walk rather than on the street) and 2. prior knowledge of goals (e.g. A person who wants to get to a car on the direct other side of the street will cross the street if it seems safe, even if there is a zebra crossing ahead).&lt;/p&gt;
+
+&lt;p&gt;These two aspects are integrated into modelling human activity with semantic scene labelling and inverse optimal control (A.K.A Inverse Reinforcement Learning).&lt;/p&gt;
+
+&lt;p class=&quot;figure&quot;&gt;&lt;img src=&quot;/assets/img/blog/2019-10-26-23-51-10.png&quot; alt=&quot;&quot; class=&quot;lead&quot; data-width=&quot;800&quot; data-height=&quot;100&quot; /&gt;
+&lt;a href=&quot;https://jsteinhardt.wordpress.com/2017/02/07/model-mis-specification-and-inverse-reinforcement-learning/&quot;&gt;src&lt;/a&gt; for image on the right.&lt;/p&gt;
+
+&lt;h2 id=&quot;socially-aware-large-scale-crowd-forecasting-paper&quot;&gt;Socially-aware Large-scale Crowd Forecasting &lt;a href=&quot;#socially-aware-large-scale-crowd-forecasting-paper&quot;&gt;[paper]&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;This paper was introduced along-side with a dataset of 42 million trajectories extracted from real-world train stations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/blog/2019-10-27-00-27-39.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The main idea&lt;/strong&gt; was a newly proposed feature named Social Affinity Map (SAM) and to address the lack of appearance information and the weak independent motion prior in linking fragmented trajectories.&lt;/p&gt;
+
+&lt;h2 id=&quot;deep-learning-approach&quot;&gt;Deep Learning Approach&lt;/h2&gt;
+
+&lt;h3 id=&quot;papers-covered-1&quot;&gt;Papers Covered&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [&lt;a href=&quot;http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [&lt;a href=&quot;https://zpascal.net/cvpr2018/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [&lt;a href=&quot;https://arxiv.org/pdf/1806.01482.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [&lt;a href=&quot;https://arxiv.org/pdf/1809.03705.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [&lt;a href=&quot;http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper&quot;&gt;Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [&lt;a href=&quot;http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf&quot;&gt;paper&lt;/a&gt;]&lt;/h2&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;figure&quot;&gt;&lt;img src=&quot;assets/img/blog/2019-10-27-17-04-24.png&quot; alt=&quot;&quot; class=&quot;lead&quot; data-width=&quot;800&quot; data-height=&quot;100&quot; /&gt;
+Overview of the Social-LSTM method&lt;/p&gt;
+
+&lt;p&gt;This paper was one of the first implement an RNN to predict pedestrian trajectories. The authors used a pooling based LSTM model which jointly predicts the trajectories of all the people in a scene.&lt;/p&gt;
+
+&lt;h3 id=&quot;results&quot;&gt;Results&lt;/h3&gt;
+
+&lt;h3 id=&quot;comments&quot;&gt;Comments&lt;/h3&gt;</content><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><summary type="html">Pedestrian trajectory prediction with deep learning Pedestrian trajectory prediction with deep learning What is Trajectory Prediction? Why is it hard? Classical Approach Papers Covered Social force model for pedestrian dynamics [paper] Activity Forecasting [paper] Socially-aware Large-scale Crowd Forecasting [paper] Deep Learning Approach Papers Covered Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [paper] Results Comments ※ Images are from the papers described unless source is made clear otherwise. What is Trajectory Prediction? Trajcetory Prediction is challenge of predicting a single/multi persons movement through ground level 2D space from given information (video frames or trajectory coordinates). Trajectory Prediction from Coordinates - Estimate future trajectories using 2D coordinates. Trajectory Prediction from Video - Estimate future trajectories using RGB images from video. Why is it hard? The difficulty in predicting trajectories arises from the complexity of human behaviour. Movement is rarely driven solely by destination but also by the existence of surrounding agents (social relations between agents, social rules and norms) and environmental factors (topology, geometry, semantics etc.). For example, think of a pedestrian walking from point A to point B. It’s raining and there could be a puddle. It is obvious to us that the pedestrian is likely to walk around the puddle but such semantic information is not well known to the machine. Another example could be of 2 people walking towards each other in opposite directions. How does the computer infer the distance a pedestrian deviates for his path to make way for the other person? Such seemingly trivial factors are reminiscent of Moravec’s paradox and are the cause of difficulty. Classical Approach The traditional Social Force model was pioneered by Helbing and Molnar. This method modelled attractive and repulsive forces between pedestrians to describe pedestrian behaviour. Similar approaches such as continuum dynamics and modelling with the Gaussian processes were also used. Using well-engineered features is also common in improving tracking and forecasting. Alahi et. al. presented a social affinity feature by learning from human trajectories in crowds. Another line of work from Kitani et. al. uses Inverse Reinforcement Learning to predict human paths in scenes. Papers Covered Social force model for pedestrian dynamics Activity Forecasting Socially-aware Large-scale Crowd Forecasting Note I must say that the latter 2 papers are relatively recent and may not be considered classical! Social force model for pedestrian dynamics [paper] In this paper, the behaviour of the pedestrian is thought to be effected by repulsive forces (strangers, walls, etc.) and attractive forces (friends, street artists, etc.). Types of social forces. Sum of all effects to the pedestrians velocity. The main idea is that a pedestrian would walk in a straight line from A to B at a desired speed if there were no external forces, but will deviate from the straight line by repulsive forces and attractive forces. Using the model described above, we can simulate the movement of pedestrians by assuming the desired speeds to be, for example, gaussian distributed with mean v_0 = 1.34ms^{-1} and standard deviation \sqrt{\theta} = 0.26ms^{-1} (as in the paper) or simply a constant v_\alpha = 1.5ms^{-1}. Activity Forecasting [paper] In contrast to the Social Forces paper, where coordinates were used as input, here the paths are predicted given an image as input. Example of plausible paths and destinations from noisy vision input. The main idea is 1. incorporate information of physical scene features and human preferences towards them (e.g. A person is more likely to walk on a side walk rather than on the street) and 2. prior knowledge of goals (e.g. A person who wants to get to a car on the direct other side of the street will cross the street if it seems safe, even if there is a zebra crossing ahead). These two aspects are integrated into modelling human activity with semantic scene labelling and inverse optimal control (A.K.A Inverse Reinforcement Learning). src for image on the right. Socially-aware Large-scale Crowd Forecasting [paper] This paper was introduced along-side with a dataset of 42 million trajectories extracted from real-world train stations. The main idea was a newly proposed feature named Social Affinity Map (SAM) and to address the lack of appearance information and the weak independent motion prior in linking fragmented trajectories. Deep Learning Approach Papers Covered Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [paper] SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [paper] SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [paper] Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [paper] Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [paper] Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [paper] Overview of the Social-LSTM method This paper was one of the first implement an RNN to predict pedestrian trajectories. The authors used a pooling based LSTM model which jointly predicts the trajectories of all the people in a scene. Results Comments</summary></entry><entry><title type="html">Welcome to my new website</title><link href="http://localhost:4000/blog/en/2019-10-23-Welcome/" rel="alternate" type="text/html" title="Welcome to my new website" /><published>2019-10-23T00:00:00+09:00</published><updated>2019-10-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/Welcome</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-10-23-Welcome/">&lt;p&gt;Hi, I’ve moved my website to github pages so I don’t have to worry about hosting services!&lt;/p&gt;
+
+&lt;p&gt;With the fees spared from hosting, instead of saving it up like a sensible person, I bought a new cool website theme called Hydejack. This lets me write a blog as well so I am very pleased with it.&lt;/p&gt;</content><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><summary type="html">Hi, I’ve moved my website to github pages so I don’t have to worry about hosting services! With the fees spared from hosting, instead of saving it up like a sensible person, I bought a new cool website theme called Hydejack. This lets me write a blog as well so I am very pleased with it.</summary></entry><entry><title type="html">サッカーで筑波大学情報科学類にAC入試で合格するには</title><link href="http://localhost:4000/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/" rel="alternate" type="text/html" title="サッカーで筑波大学情報科学類にAC入試で合格するには" /><published>2019-10-23T00:00:00+09:00</published><updated>2019-10-23T00:00:00+09:00</updated><id>http://localhost:4000/blog/jp/%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF</id><content type="html" xml:base="http://localhost:4000/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/">&lt;p&gt;筑波大学のAC入試に挑戦したい後輩から連絡があったことをきっかけに自分の経験まとめてみようと思います。&lt;/p&gt;
 
 &lt;p&gt;※もともと自分のHPにあった記事です。&lt;/p&gt;
 

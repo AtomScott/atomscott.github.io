@@ -54,6 +54,8 @@ menu:
     url:               /blog/en
   - title:             投稿(日本語)
     url:               /blog/jp
+  - title:             Publications
+    url:               /publications
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
