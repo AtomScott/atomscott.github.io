@@ -94,8 +94,8 @@ This paper was introduced along-side with a dataset of 42 million trajectories e
 
 - [Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016)](#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper)
 - [SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018)](#socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper)
-- [SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018)] (http://127.0.0.1:4000/blog/en/2019-10-25-pedestrian-trajectory/#sophie-an-attentive-gan-for-predicting-paths-compliant-to-social-and-physical-constraints-2018-paper)
-- [Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019)] (http://127.0.0.1:4000/blog/en/2019-10-25-pedestrian-trajectory/#peeking-into-the-future-predicting-future-person-activities-and-locations-in-videos-2019-paper)
+- [SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018)](http://127.0.0.1:4000/blog/en/2019-10-25-pedestrian-trajectory/#sophie-an-attentive-gan-for-predicting-paths-compliant-to-social-and-physical-constraints-2018-paper)
+- [Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019)](http://127.0.0.1:4000/blog/en/2019-10-25-pedestrian-trajectory/#peeking-into-the-future-predicting-future-person-activities-and-locations-in-videos-2019-paper)
 
 ## Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [[paper](http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf)]
 
