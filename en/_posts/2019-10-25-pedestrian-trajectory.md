@@ -140,13 +140,13 @@ Metrics for Social-GAN
 
 ## SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [[paper](https://arxiv.org/pdf/1806.01482.pdf)]
 
-![](/assets/img/blog/2019-10-28-15-05-17.png) {:.lead data-width="800" data-height="100"} 
+![](/assets/img/blog/2019-10-28-15-05-17.png){:.lead data-width="800" data-height="100"} 
  Results 
 {:.figure}
 
 ### Results
 
-![](/assets/img/blog/2019-10-28-15-06-57.png) {:.lead data-width="800" data-height="100"} 
+![](/assets/img/blog/2019-10-28-15-06-57.png){:.lead data-width="800" data-height="100"} 
  Results 
 {:.figure}
 
@@ -155,12 +155,12 @@ Metrics for Social-GAN
 
 ## Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf)]
 
-![](/assets/img/blog/2019-10-28-15-37-36.png) {:.lead data-width="800" data-height="100"}
+![](/assets/img/blog/2019-10-28-15-37-36.png){:.lead data-width="800" data-height="100"}
 System overview
 {:.figure}
 
 ### Results
-![](/assets/img/blog/2019-10-28-15-36-38.png) {:.lead data-width="800" data-height="100"}
+![](/assets/img/blog/2019-10-28-15-36-38.png){:.lead data-width="800" data-height="100"}
  Results 
  {:.figure}
 
