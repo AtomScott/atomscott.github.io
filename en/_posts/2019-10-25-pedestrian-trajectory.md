@@ -94,9 +94,8 @@ This paper was introduced along-side with a dataset of 42 million trajectories e
 
 - [Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016)](#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper)
 - [SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018)](#socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper)
-- SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [[paper](https://arxiv.org/pdf/1806.01482.pdf)]
-- Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [[paper](https://arxiv.org/pdf/1809.03705.pdf)]
-- Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf)]
+- [SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018)] (http://127.0.0.1:4000/blog/en/2019-10-25-pedestrian-trajectory/#sophie-an-attentive-gan-for-predicting-paths-compliant-to-social-and-physical-constraints-2018-paper)
+- [Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019)] (http://127.0.0.1:4000/blog/en/2019-10-25-pedestrian-trajectory/#peeking-into-the-future-predicting-future-person-activities-and-locations-in-videos-2019-paper)
 
 ## Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [[paper](http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf)]
 
@@ -121,24 +120,48 @@ Look at SF(social forces) and Social-LSTM.
 
 ## SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [[paper](https://zpascal.net/cvpr2018/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf)]
 
-### Comments
+Social-GAN improves on Social-LSTM by adding a discriminator module.
+
+![](/assets/img/blog/2019-10-28-14-49-32.png){:.lead data-width="800" data-height="100"}
+System overiew.
+{:.figure}
+
+**The main idea** is that by using a GAN like architecture the generator and discriminator will play a minimax game that eventually improves the output.
 
 ### Results
+
+![](/assets/img/blog/2019-10-28-14-54-45.png){:.lead data-width="800" data-height="100"}
+Metrics for Social-GAN
+{:.figure}
+
+
+### Comments
+
 
 ## SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [[paper](https://arxiv.org/pdf/1806.01482.pdf)]
 
-### Comments
+![](/assets/img/blog/2019-10-28-15-05-17.png) {:.lead data-width="800" data-height="100"} 
+ Results 
+{:.figure}
 
 ### Results
 
-## Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [[paper](https://arxiv.org/pdf/1809.03705.pdf)]
+![](/assets/img/blog/2019-10-28-15-06-57.png) {:.lead data-width="800" data-height="100"} 
+ Results 
+{:.figure}
 
 ### Comments
 
-### Results
 
 ## Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf)]
 
-### Comments
+![](/assets/img/blog/2019-10-28-15-37-36.png) {:.lead data-width="800" data-height="100"}
+System overview
+{:.figure}
 
 ### Results
+![](/assets/img/blog/2019-10-28-15-36-38.png) {:.lead data-width="800" data-height="100"}
+ Results 
+ {:.figure}
+
+ ### Comments
