@@ -394,35 +394,31 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
   </header>
 
   
-    <h1 id="pedestrian-trajectory-prediction-with-deep-learning">Pedestrian trajectory prediction with deep learning</h1>
+    <h1 class="no_toc" id="pedestrian-trajectory-prediction-with-deep-learning">Pedestrian trajectory prediction with deep learning</h1>
 
 <ul id="markdown-toc">
-  <li><a href="#pedestrian-trajectory-prediction-with-deep-learning" id="markdown-toc-pedestrian-trajectory-prediction-with-deep-learning">Pedestrian trajectory prediction with deep learning</a>    <ul>
-      <li><a href="#what-is-trajectory-prediction" id="markdown-toc-what-is-trajectory-prediction">What is Trajectory Prediction?</a></li>
-      <li><a href="#why-is-it-hard" id="markdown-toc-why-is-it-hard">Why is it hard?</a></li>
-      <li><a href="#classical-approach" id="markdown-toc-classical-approach">Classical Approach</a>        <ul>
-          <li><a href="#papers-covered" id="markdown-toc-papers-covered">Papers Covered</a></li>
-        </ul>
-      </li>
+  <li><a href="#what-is-trajectory-prediction" id="markdown-toc-what-is-trajectory-prediction">What is Trajectory Prediction?</a></li>
+  <li><a href="#why-is-it-hard" id="markdown-toc-why-is-it-hard">Why is it hard?</a></li>
+  <li><a href="#classical-approach" id="markdown-toc-classical-approach">Classical Approach</a>    <ul>
+      <li><a href="#papers-covered" id="markdown-toc-papers-covered">Papers Covered</a></li>
       <li><a href="#social-force-model-for-pedestrian-dynamics-paper" id="markdown-toc-social-force-model-for-pedestrian-dynamics-paper">Social force model for pedestrian dynamics [paper]</a></li>
       <li><a href="#activity-forecasting-paper" id="markdown-toc-activity-forecasting-paper">Activity Forecasting [paper]</a></li>
       <li><a href="#socially-aware-large-scale-crowd-forecasting-paper" id="markdown-toc-socially-aware-large-scale-crowd-forecasting-paper">Socially-aware Large-scale Crowd Forecasting [paper]</a></li>
-      <li><a href="#deep-learning-approach" id="markdown-toc-deep-learning-approach">Deep Learning Approach</a>        <ul>
-          <li><a href="#papers-covered-1" id="markdown-toc-papers-covered-1">Papers Covered</a></li>
-        </ul>
-      </li>
-      <li><a href="#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper" id="markdown-toc-social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper">Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [paper]</a>        <ul>
-          <li><a href="#results" id="markdown-toc-results">Results</a></li>
-          <li><a href="#comments" id="markdown-toc-comments">Comments</a></li>
-        </ul>
-      </li>
+    </ul>
+  </li>
+  <li><a href="#deep-learning-approach" id="markdown-toc-deep-learning-approach">Deep Learning Approach</a>    <ul>
+      <li><a href="#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper" id="markdown-toc-social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper">Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [paper]</a></li>
+      <li><a href="#socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper" id="markdown-toc-socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper">SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [paper]</a></li>
+      <li><a href="#sophie-an-attentive-gan-for-predicting-paths-compliant-to-social-and-physical-constraints-2018-paper" id="markdown-toc-sophie-an-attentive-gan-for-predicting-paths-compliant-to-social-and-physical-constraints-2018-paper">SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [paper]</a></li>
+      <li><a href="#bio-lstm-a-biomechanically-inspired-recurrent-neural-network-for-3d-pedestrian-pose-and-gait-prediction-2019-paper" id="markdown-toc-bio-lstm-a-biomechanically-inspired-recurrent-neural-network-for-3d-pedestrian-pose-and-gait-prediction-2019-paper">Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [paper]</a></li>
+      <li><a href="#peeking-into-the-future-predicting-future-person-activities-and-locations-in-videos-2019-paper" id="markdown-toc-peeking-into-the-future-predicting-future-person-activities-and-locations-in-videos-2019-paper">Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [paper]</a></li>
     </ul>
   </li>
 </ul>
 
 <p>※ Images are from the papers described unless source is made clear otherwise.</p>
 
-<h2 id="what-is-trajectory-prediction">What is Trajectory Prediction?</h2>
+<h1 id="what-is-trajectory-prediction">What is Trajectory Prediction?</h1>
 
 <p><strong>Trajcetory Prediction</strong> is challenge of predicting a single/multi persons movement through ground level 2D space from given information (video frames or trajectory coordinates).</p>
 
@@ -437,7 +433,7 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 </hy-img>
 </p>
 
-<h2 id="why-is-it-hard">Why is it hard?</h2>
+<h1 id="why-is-it-hard">Why is it hard?</h1>
 
 <p>The difficulty in predicting trajectories arises from the complexity of human behaviour. Movement is rarely driven solely by destination but also by the existence of surrounding agents (social relations between agents, social rules and norms) and environmental factors (topology, geometry, semantics etc.).</p>
 
@@ -445,7 +441,7 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 
 <p>Another example could be of 2 people walking towards each other in opposite directions. How does the computer infer the distance a pedestrian deviates for his path to make way for the other person? Such seemingly trivial factors are reminiscent of <a href="https://en.wikipedia.org/wiki/Moravec%27s_paradox">Moravec’s paradox</a> and are the cause of difficulty.</p>
 
-<h2 id="classical-approach">Classical Approach</h2>
+<h1 id="classical-approach">Classical Approach</h1>
 
 <p>The traditional Social Force model was pioneered by Helbing and Molnar. This method modelled attractive and repulsive forces between pedestrians to describe pedestrian behaviour. Similar approaches such as continuum dynamics and modelling with the Gaussian processes were also used.</p>
 
@@ -453,7 +449,7 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 
 <p>Another line of work from Kitani et. al. uses Inverse Reinforcement Learning to predict human paths in scenes.</p>
 
-<h3 id="papers-covered">Papers Covered</h3>
+<h2 id="papers-covered">Papers Covered</h2>
 
 <ul>
   <li><a href="#social-force-model-for-pedestrian-dynamics-paper">Social force model for pedestrian dynamics</a></li>
@@ -519,33 +515,70 @@ Example of plausible paths and destinations from noisy vision input.</p>
 
 <p><strong>The main idea</strong> was a newly proposed feature named Social Affinity Map (SAM) and to address the lack of appearance information and the weak independent motion prior in linking fragmented trajectories.</p>
 
-<h2 id="deep-learning-approach">Deep Learning Approach</h2>
+<h1 id="deep-learning-approach">Deep Learning Approach</h1>
 
 <h3 id="papers-covered-1">Papers Covered</h3>
 
 <ul>
-  <li>Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [<a href="http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf">paper</a>]</li>
-  <li>SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [<a href="https://zpascal.net/cvpr2018/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf">paper</a>]</li>
+  <li><a href="#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper">Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016)</a></li>
+  <li><a href="#socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper">SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018)</a></li>
   <li>SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [<a href="https://arxiv.org/pdf/1806.01482.pdf">paper</a>]</li>
   <li>Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [<a href="https://arxiv.org/pdf/1809.03705.pdf">paper</a>]</li>
   <li>Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf">paper</a>]</li>
-  <li>
-    <h2 id="social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper">Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [<a href="http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf">paper</a>]</h2>
-  </li>
 </ul>
 
-<p class="figure"><hy-img root-margin="512px" src="assets/img/blog/2019-10-27-17-04-24.png" alt="" class="lead" data-width="800" data-height="100">
-  <noscript><img data-ignore src="assets/img/blog/2019-10-27-17-04-24.png" alt="" class="lead" data-width="800" data-height="100"/></noscript>
+<h2 id="social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper">Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [<a href="http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf">paper</a>]</h2>
+
+<p>This paper was one of the first to implement an RNN to predict pedestrian trajectories. The authors used a pooling based LSTM model which jointly predicts the trajectories of all the people in a scene.</p>
+
+<p class="figure"><hy-img root-margin="512px" src="/assets/img/blog/2019-10-27-17-04-24.png" alt="" class="lead" data-width="800" data-height="100">
+  <noscript><img data-ignore src="/assets/img/blog/2019-10-27-17-04-24.png" alt="" class="lead" data-width="800" data-height="100"/></noscript>
   <span slot="loading" class="loading"><span class="icon-cog"></span></span>
 </hy-img>
 
 Overview of the Social-LSTM method</p>
 
-<p>This paper was one of the first implement an RNN to predict pedestrian trajectories. The authors used a pooling based LSTM model which jointly predicts the trajectories of all the people in a scene.</p>
+<p><strong>The main idea</strong> is to capture the interactions of neighbouring people by pooling the hidden states of several LSTMs that each model a single pedestrian. In contrast, the naive use of one LSTM model per person would be agnostic to the behaviour of other sequences.</p>
 
 <h3 id="results">Results</h3>
+<p class="figure"><hy-img root-margin="512px" src="/assets/img/blog/2019-10-27-17-17-41.png" alt="" class="lead" data-width="800" data-height="100">
+  <noscript><img data-ignore src="/assets/img/blog/2019-10-27-17-17-41.png" alt="" class="lead" data-width="800" data-height="100"/></noscript>
+  <span slot="loading" class="loading"><span class="icon-cog"></span></span>
+</hy-img>
+
+Look at SF(social forces) and Social-LSTM.</p>
 
 <h3 id="comments">Comments</h3>
+
+<ul>
+  <li>The Social-LSTM is generally better than traditional models such as Social Force.</li>
+  <li>Social Force has the best average final displacement error.</li>
+  <li>Social-LSTM doesn’t use semantic scene information and still gets good results!</li>
+</ul>
+
+<h2 id="socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper">SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [<a href="https://zpascal.net/cvpr2018/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf">paper</a>]</h2>
+
+<h3 id="comments-1">Comments</h3>
+
+<h3 id="results-1">Results</h3>
+
+<h2 id="sophie-an-attentive-gan-for-predicting-paths-compliant-to-social-and-physical-constraints-2018-paper">SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [<a href="https://arxiv.org/pdf/1806.01482.pdf">paper</a>]</h2>
+
+<h3 id="comments-2">Comments</h3>
+
+<h3 id="results-2">Results</h3>
+
+<h2 id="bio-lstm-a-biomechanically-inspired-recurrent-neural-network-for-3d-pedestrian-pose-and-gait-prediction-2019-paper">Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [<a href="https://arxiv.org/pdf/1809.03705.pdf">paper</a>]</h2>
+
+<h3 id="comments-3">Comments</h3>
+
+<h3 id="results-3">Results</h3>
+
+<h2 id="peeking-into-the-future-predicting-future-person-activities-and-locations-in-videos-2019-paper">Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [<a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf">paper</a>]</h2>
+
+<h3 id="comments-4">Comments</h3>
+
+<h3 id="results-4">Results</h3>
 
 
     

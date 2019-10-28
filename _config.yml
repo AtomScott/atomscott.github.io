@@ -341,6 +341,7 @@ kramdown:
   math_engine_opts:
     preview:           true
     preview_as_code:   true
+  toc_levels: "1,2" 
 
 compress_html:
   comments:            ["<!-- ", " -->"]

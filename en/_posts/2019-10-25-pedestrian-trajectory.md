@@ -8,13 +8,14 @@ excerpt_separator: <!--more-->
 ---
 
 # Pedestrian trajectory prediction with deep learning
+{:.no_toc}
 
 - toc
-{:toc} 
+{:toc}
 
 ※ Images are from the papers described unless source is made clear otherwise.
 
-##  What is Trajectory Prediction?
+#  What is Trajectory Prediction?
 
 **Trajcetory Prediction** is challenge of predicting a single/multi persons movement through ground level 2D space from given information (video frames or trajectory coordinates). 
 
@@ -23,7 +24,7 @@ excerpt_separator: <!--more-->
 
 ![](/assets/img/blog/peek.gif)
 
-## Why is it hard?
+# Why is it hard?
 
 The difficulty in predicting trajectories arises from the complexity of human behaviour. Movement is rarely driven solely by destination but also by the existence of surrounding agents (social relations between agents, social rules and norms) and environmental factors (topology, geometry, semantics etc.).
 
@@ -31,7 +32,7 @@ For example, think of a pedestrian walking from point A to point B. It's raining
 
 Another example could be of 2 people walking towards each other in opposite directions. How does the computer infer the distance a pedestrian deviates for his path to make way for the other person? Such seemingly trivial factors are reminiscent of [Moravec's paradox](https://en.wikipedia.org/wiki/Moravec%27s_paradox) and are the cause of difficulty.
  
-## Classical Approach
+# Classical Approach
 
 The traditional Social Force model was pioneered by Helbing and Molnar. This method modelled attractive and repulsive forces between pedestrians to describe pedestrian behaviour. Similar approaches such as continuum dynamics and modelling with the Gaussian processes were also used.
 
@@ -39,7 +40,7 @@ Using well-engineered features is also common in improving tracking and forecast
 
 Another line of work from Kitani et. al. uses Inverse Reinforcement Learning to predict human paths in scenes.
 
-### Papers Covered
+## Papers Covered
 
 - [Social force model for pedestrian dynamics](#social-force-model-for-pedestrian-dynamics-paper)
 - [Activity Forecasting](#activity-forecasting-paper)
@@ -87,25 +88,57 @@ This paper was introduced along-side with a dataset of 42 million trajectories e
 
 **The main idea** was a newly proposed feature named Social Affinity Map (SAM) and to address the lack of appearance information and the weak independent motion prior in linking fragmented trajectories.
 
-## Deep Learning Approach
+# Deep Learning Approach
 
 ### Papers Covered
 
-- Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [[paper](http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf)]
-- SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [[paper](https://zpascal.net/cvpr2018/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf)]
+- [Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016)](#social-lstm-human-trajectory-prediction-in-crowded-spaces2016-paper)
+- [SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018)](#socialgan-socially-acceptable-trajectories-with-generative-adversarial-networks-2018-paper)
 - SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [[paper](https://arxiv.org/pdf/1806.01482.pdf)]
 - Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [[paper](https://arxiv.org/pdf/1809.03705.pdf)]
 - Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf)]
-- 
+
 ## Social LSTM: Human Trajectory Prediction in Crowded Spaces(2016) [[paper](http://cvgl.stanford.edu/papers/CVPR16_Social_LSTM.pdf)]
 
-![](assets/img/blog/2019-10-27-17-04-24.png){:.lead data-width="800" data-height="100"}
+This paper was one of the first to implement an RNN to predict pedestrian trajectories. The authors used a pooling based LSTM model which jointly predicts the trajectories of all the people in a scene. 
+
+![](/assets/img/blog/2019-10-27-17-04-24.png){:.lead data-width="800" data-height="100"}
 Overview of the Social-LSTM method
 {:.figure}
 
-This paper was one of the first implement an RNN to predict pedestrian trajectories. The authors used a pooling based LSTM model which jointly predicts the trajectories of all the people in a scene. 
+**The main idea** is to capture the interactions of neighbouring people by pooling the hidden states of several LSTMs that each model a single pedestrian. In contrast, the naive use of one LSTM model per person would be agnostic to the behaviour of other sequences.
 
+### Results
+![](/assets/img/blog/2019-10-27-17-17-41.png){:.lead data-width="800" data-height="100"}
+Look at SF(social forces) and Social-LSTM.
+{:.figure}
+
+### Comments
+
+- The Social-LSTM is generally better than traditional models such as Social Force.
+- Social Force has the best average final displacement error.
+- Social-LSTM doesn't use semantic scene information and still gets good results!
+
+## SocialGAN: Socially Acceptable Trajectories with Generative Adversarial Networks (2018) [[paper](https://zpascal.net/cvpr2018/Gupta_Social_GAN_Socially_CVPR_2018_paper.pdf)]
+
+### Comments
 
 ### Results
 
+## SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints (2018) [[paper](https://arxiv.org/pdf/1806.01482.pdf)]
+
 ### Comments
+
+### Results
+
+## Bio-LSTM: A Biomechanically Inspired Recurrent Neural Network for 3D Pedestrian Pose and Gait Prediction (2019) [[paper](https://arxiv.org/pdf/1809.03705.pdf)]
+
+### Comments
+
+### Results
+
+## Peeking into the Future: Predicting Future Person Activities and Locations in Videos (2019) [[paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf)]
+
+### Comments
+
+### Results
