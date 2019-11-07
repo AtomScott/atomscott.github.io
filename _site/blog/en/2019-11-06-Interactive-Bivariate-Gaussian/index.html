@@ -37,24 +37,24 @@ Powered by Hydejack v8.5.2 <https://hydejack.com/>
 
   
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Predicting The Future In Sports With Deep Learning | Atom Scott</title>
+<title>An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution | Atom Scott</title>
 <meta name="generator" content="Jekyll v3.8.6" />
-<meta property="og:title" content="Predicting The Future In Sports With Deep Learning" />
+<meta property="og:title" content="An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution" />
 <meta name="author" content="Atom Scott" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Being able to predict trajectories of people is useful for obvious applications such as human interactive robotics and autonomous vehichles. There is also an interest in team sport since it could provide insight for tactical analsis. In this post, I will write about Multi-Agent Trajcetory prediciton (e.g. tracking in team sport). In the post before I wrote about Pedestrian Trajectory Prediction." />
-<meta property="og:description" content="Being able to predict trajectories of people is useful for obvious applications such as human interactive robotics and autonomous vehichles. There is also an interest in team sport since it could provide insight for tactical analsis. In this post, I will write about Multi-Agent Trajcetory prediciton (e.g. tracking in team sport). In the post before I wrote about Pedestrian Trajectory Prediction." />
-<link rel="canonical" href="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" />
-<meta property="og:url" content="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" />
+<meta name="description" content="※ Some Javascript issues, reload the page if you can’t see the canvas working! Also, it takes a while to load so please be patient." />
+<meta property="og:description" content="※ Some Javascript issues, reload the page if you can’t see the canvas working! Also, it takes a while to load so please be patient." />
+<link rel="canonical" href="http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/" />
+<meta property="og:url" content="http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/" />
 <meta property="og:site_name" content="Atom Scott" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-27T00:00:00+09:00" />
+<meta property="article:published_time" content="2019-11-06T00:00:00+09:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Predicting The Future In Sports With Deep Learning" />
+<meta property="twitter:title" content="An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution" />
 <meta name="twitter:site" content="@AtomJamesScott" />
 <meta name="twitter:creator" content="@Atom Scott" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/profile.jpg"},"name":"Atom Scott"},"url":"http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/","headline":"Predicting The Future In Sports With Deep Learning","dateModified":"2019-10-27T00:00:00+09:00","datePublished":"2019-10-27T00:00:00+09:00","author":{"@type":"Person","name":"Atom Scott"},"description":"Being able to predict trajectories of people is useful for obvious applications such as human interactive robotics and autonomous vehichles. There is also an interest in team sport since it could provide insight for tactical analsis. In this post, I will write about Multi-Agent Trajcetory prediciton (e.g. tracking in team sport). In the post before I wrote about Pedestrian Trajectory Prediction.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/profile.jpg"},"name":"Atom Scott"},"url":"http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/","headline":"An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution","dateModified":"2019-11-06T00:00:00+09:00","datePublished":"2019-11-06T00:00:00+09:00","author":{"@type":"Person","name":"Atom Scott"},"description":"※ Some Javascript issues, reload the page if you can’t see the canvas working! Also, it takes a while to load so please be patient.","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -84,7 +84,7 @@ Powered by Hydejack v8.5.2 <https://hydejack.com/>
 
 
 
-<link rel="alternate" href="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" hreflang="en">
+<link rel="alternate" href="http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/" hreflang="en">
 
 <link rel="shortcut icon" href="/assets/icons/favicon.ico">
 <link rel="apple-touch-icon" href="/assets/icons/icon.png">
@@ -211,17 +211,17 @@ Powered by Hydejack v8.5.2 <https://hydejack.com/>
 
 
 
-<article id="post-blog-en-Guide-to-traj-2019-Sports" class="page post mb6" role="article">
+<article id="post-blog-en-Interactive-Bivariate-Gaussian" class="page post mb6" role="article">
   <header>
     <h1 class="post-title">
       
-        Predicting The Future In Sports With Deep Learning
+        An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution
       
     </h1>
 
     <p class="post-date heading">
       
-      <time datetime="2019-10-27T00:00:00+09:00">27 Oct 2019</time>
+      <time datetime="2019-11-06T00:00:00+09:00">06 Nov 2019</time>
       
       
       
@@ -261,7 +261,7 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 
   
     <p class="message" >
-      Being able to predict trajectories of people is useful for obvious applications such as human interactive robotics and autonomous vehichles. There is also an interest in team sport since it could provide insight for tactical analsis. In this post, I will write about Multi-Agent Trajcetory prediciton (e.g. tracking in team sport). In the post before I wrote about Pedestrian Trajectory Prediction.
+      ※ Some Javascript issues, reload the page if you can’t see the canvas working! Also, it takes a while to load so please be patient.
 
     </p>
   
@@ -271,42 +271,90 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 
   
     
-<ul id="markdown-toc">
-  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
-  <li><a href="#diverse-generation-for-multi-agent-sports-games-paper" id="markdown-toc-diverse-generation-for-multi-agent-sports-games-paper">Diverse Generation for Multi-Agent Sports Games [paper]</a></li>
-  <li><a href="#stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper" id="markdown-toc-stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper">Stochastic Prediction of Multi-Agent Interactions from Partial Observations [paper]</a></li>
-  <li><a href="#generating-multi-agent-trajectories-using-programmatic-weak-supervision-paper" id="markdown-toc-generating-multi-agent-trajectories-using-programmatic-weak-supervision-paper">Generating Multi-Agent Trajectories using Programmatic Weak Supervision [paper]</a></li>
-  <li><a href="#generative-multi-agent-behavioral-cloning-paper" id="markdown-toc-generative-multi-agent-behavioral-cloning-paper">Generative Multi-Agent Behavioral Cloning [paper]</a></li>
-  <li><a href="#where-will-they-go-predicting-fine-grained-adversarial-multi-agent-motion-using-conditional-variational-autoencoders-eccv-2018-paper" id="markdown-toc-where-will-they-go-predicting-fine-grained-adversarial-multi-agent-motion-using-conditional-variational-autoencoders-eccv-2018-paper">Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. [paper]</a></li>
-  <li><a href="#coordinated-multi-agent-imitation-learning-paper" id="markdown-toc-coordinated-multi-agent-imitation-learning-paper">Coordinated Multi-Agent Imitation Learning [paper]</a></li>
-  <li><a href="#generating-long-term-trajectories-using-deep-hierarchical-networks-paper" id="markdown-toc-generating-long-term-trajectories-using-deep-hierarchical-networks-paper">Generating long-term trajectories using deep hierarchical networks [paper]</a></li>
-  <li><a href="#learning-fine-grained-spatial-models-for-dynamic-sports-play-prediction-paper" id="markdown-toc-learning-fine-grained-spatial-models-for-dynamic-sports-play-prediction-paper">Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction [paper]</a></li>
-  <li><a href="#generative-modeling-of-multimodal-multi-human-behavior-paper" id="markdown-toc-generative-modeling-of-multimodal-multi-human-behavior-paper">Generative Modeling of Multimodal Multi-Human Behavior [paper]</a></li>
-</ul>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.2/math.min.js"></script>
 
-<h2 id="overview">Overview</h2>
+<script src="https://docs.opencv.org/3.4.1/opencv.js"></script>
 
-<p>There is an <a href="https://github.com/jiachenli94/Awesome-Interaction-aware-Trajectory-Prediction#sport-players-1">awesome github page</a> for pedestrian trajectory prediction with a section specifically for papers in sport.</p>
+<div id="canvasControls"></div>
 
-<p>Below are summaries of each post describing the main ideas and methods used.</p>
+<canvas id="canvas1" style="display:block; width:100%;height:500px">If you see this then your browser doesn't support
+    the necessary web tech!</canvas>
 
-<h2 id="diverse-generation-for-multi-agent-sports-games-paper">Diverse Generation for Multi-Agent Sports Games [<a href="http://openaccess.thecvf.com/content_CVPR_2019/html/Yeh_Diverse_Generation_for_Multi-Agent_Sports_Games_CVPR_2019_paper.html">paper</a>]</h2>
+<script>
+    function bivariateNormal(x,y,meanX,meanY,stdX,stdY,corrCoeff){
+        let left = 1/(2*math.pi*stdX*stdY*Math.sqrt(1-corrCoeff**2));
 
-<h2 id="stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper">Stochastic Prediction of Multi-Agent Interactions from Partial Observations [<a href="http://arxiv.org/abs/1902.09641v1">paper</a>]</h2>
+        let z = ((x-meanX)**2)/stdX**2 - (2*corrCoeff*(x-meanX)*(y-meanY))/(stdX*stdY) + ((y-meanY)**2)/stdY**2;
+        let expo = -z/ (2*(1-corrCoeff**2));
+        let right = math.exp(expo);
+        return math.multiply(left, right);
+    }
 
-<h2 id="generating-multi-agent-trajectories-using-programmatic-weak-supervision-paper">Generating Multi-Agent Trajectories using Programmatic Weak Supervision [<a href="http://arxiv.org/abs/1803.07612v6">paper</a>]</h2>
 
-<h2 id="generative-multi-agent-behavioral-cloning-paper">Generative Multi-Agent Behavioral Cloning [<a href="http://www.stephanzheng.com/pdf/Zhan_Zheng_Lucey_Yue_Generative_Multi_Agent_Behavioral_Cloning.pdf">paper</a>]</h2>
+    function draw(){
+        let mat = cv.Mat.zeros(c.height, c.width, cv.CV_8U);
+        let maxZ = bivariateNormal(meanX.getValue(), meanY.getValue(), meanX.getValue(), meanY.getValue(),stdX.getValue(), stdY.getValue(), corrCoeff.getValue());
+        for (i = 0; i < 10000; i++) {
 
-<h2 id="where-will-they-go-predicting-fine-grained-adversarial-multi-agent-motion-using-conditional-variational-autoencoders-eccv-2018-paper">Where Will They Go? Predicting Fine-Grained Adversarial Multi-Agent Motion using Conditional Variational Autoencoders, ECCV 2018. [<a href="http://openaccess.thecvf.com/content_ECCV_2018/papers/Panna_Felsen_Where_Will_They_ECCV_2018_paper.pdf">paper</a>]</h2>
+            var x = Math.floor(Math.random() * Math.floor(c.width));
+            var y = Math.floor(Math.random() * Math.floor(c.height));
+            var z = bivariateNormal(x/c.width, y/c.height, meanX.getValue(), meanY.getValue(),stdX.getValue(), stdY.getValue(), corrCoeff.getValue());
+            mat.ucharPtr(y, x)[0] = z*255/maxZ;
+        }
+        cv.imshow(c, mat);
+    }
 
-<h2 id="coordinated-multi-agent-imitation-learning-paper">Coordinated Multi-Agent Imitation Learning [<a href="http://arxiv.org/abs/1703.03121v2">paper</a>]</h2>
+    class Slider{
+        constructor(name, parentId, min, max, step=1){
 
-<h2 id="generating-long-term-trajectories-using-deep-hierarchical-networks-paper">Generating long-term trajectories using deep hierarchical networks [<a href="https://arxiv.org/abs/1706.07138">paper</a>]</h2>
+            const me = this;
+            me.name = name;
+            me.parent = document.getElementById(parentId);
+            me.step = step;
+            me.min = min;
+            me.max = max;
 
-<h2 id="learning-fine-grained-spatial-models-for-dynamic-sports-play-prediction-paper">Learning Fine-Grained Spatial Models for Dynamic Sports Play Prediction [<a href="https://ieeexplore.ieee.org/document/7023384/footnotes#footnotes">paper</a>]</h2>
+            me.createElement();
+            me.slider = document.getElementById(me.name);
+            me.output = document.getElementById(me.name+"Out");
 
-<h2 id="generative-modeling-of-multimodal-multi-human-behavior-paper">Generative Modeling of Multimodal Multi-Human Behavior [<a href="https://arxiv.org/pdf/1803.02015.pdf">paper</a>]</h2>
+            me.output.innerHTML = me.slider.value;
+            me.slider.oninput = function f(){
+                me.output.innerHTML = me.slider.value;
+                draw();
+            };
+        }
+
+        getValue(){
+            return parseFloat(this.slider.value);
+        }
+        createElement(){
+            const me = this;
+            var sliderHTML = `
+                <div class="slidecontainer">
+                    <input type="range" min="${me.min}" max="${me.max}" value="${(me.min+me.max)/2}" step=${me.step} class="slider" id="${me.name}">
+                    <p>${me.name}: <span id="${me.name + 'Out'}"></span></p>
+                </div>`;
+            me.parent.insertAdjacentHTML('beforeend', sliderHTML);
+        }
+    }
+
+    var c = document.getElementById("canvas1");
+    var ctx = c.getContext("2d");
+
+    c.height = c.width / math.phi;
+    ctx.fillStyle = "white";
+    ctx.fillRect(0, 0, c.width, c.height);
+
+    const meanX = new Slider("meanX", "canvasControls", 0, 1, 0.01);
+    const meanY = new Slider("meanY", "canvasControls", 0, 1, 0.01);
+    const stdX = new Slider("stdX", "canvasControls", 0, 1, 0.01);
+    const stdY = new Slider("stdY", "canvasControls", 0, 1, 0.01);
+    const corrCoeff = new Slider("corrCoeff", "canvasControls", -1, 1, 0.01);
+
+    draw();
+
+</script>
 
 
   
@@ -455,8 +503,8 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 
 
 <li>
-  <a href="/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/" class="h4 flip-title"><span>An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution</span></a>
-  <time class="heading faded fine" datetime="2019-11-06T00:00:00+09:00">06 Nov 2019</time>
+  <a href="/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" class="h4 flip-title"><span>Predicting The Future In Sports With Deep Learning</span></a>
+  <time class="heading faded fine" datetime="2019-10-27T00:00:00+09:00">27 Oct 2019</time>
 </li>
 
     
@@ -499,26 +547,26 @@ in <a href="/blog/en/" class="flip-title">English Posts</a>
 
 
 <li>
-  <a href="/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/" class="h4 flip-title"><span>An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution</span></a>
-  <time class="heading faded fine" datetime="2019-11-06T00:00:00+09:00">06 Nov 2019</time>
-</li>
-
-    
-      
-
-
-<li>
-  <a href="/blog/jp/2019-10-23-%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%81%A7%E7%AD%91%E6%B3%A2%E5%A4%A7%E5%AD%A6%E6%83%85%E5%A0%B1%E7%A7%91%E5%AD%A6%E9%A1%9E%E3%81%ABAC%E5%85%A5%E8%A9%A6%E3%81%A7%E5%90%88%E6%A0%BC%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF/" class="h4 flip-title"><span>サッカーで筑波大学情報科学類にAC入試で合格するには</span></a>
-  <time class="heading faded fine" datetime="2019-10-23T00:00:00+09:00">23 Oct 2019</time>
-</li>
-
-    
-      
-
-
-<li>
   <a href="/blog/en/2019-10-25-pedestrian-trajectory/" class="h4 flip-title"><span>Pedestrian trajectory prediction with deep learning</span></a>
   <time class="heading faded fine" datetime="2019-10-25T00:00:00+09:00">25 Oct 2019</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" class="h4 flip-title"><span>Predicting The Future In Sports With Deep Learning</span></a>
+  <time class="heading faded fine" datetime="2019-10-27T00:00:00+09:00">27 Oct 2019</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/blog/en/2019-10-23-Welcome/" class="h4 flip-title"><span>Welcome to my new website</span></a>
+  <time class="heading faded fine" datetime="2019-10-23T00:00:00+09:00">23 Oct 2019</time>
 </li>
 
     

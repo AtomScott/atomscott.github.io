@@ -2,11 +2,11 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/blog/en/</loc>
-<lastmod>2019-10-28T16:01:29+09:00</lastmod>
+<lastmod>2019-11-07T16:07:46+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/jp/</loc>
-<lastmod>2019-10-28T16:01:29+09:00</lastmod>
+<lastmod>2019-11-07T16:07:46+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/blog/en/2019-10-23-Welcome/</loc>
@@ -23,6 +23,10 @@
 <url>
 <loc>http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/</loc>
 <lastmod>2019-10-27T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/</loc>
+<lastmod>2019-11-06T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/projects/sportech-sanity/</loc>

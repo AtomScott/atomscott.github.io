@@ -1,5 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-10-28T16:01:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Atom Scott</title><subtitle>Atom Scott's personal website. I am a ML/DL research student with a thing for sports.
-</subtitle><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><entry><title type="html">Predicting The Future In Sports With Deep Learning</title><link href="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" rel="alternate" type="text/html" title="Predicting The Future In Sports With Deep Learning" /><published>2019-10-27T00:00:00+09:00</published><updated>2019-10-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/Guide-to-traj-2019-Sports</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/">&lt;ul id=&quot;markdown-toc&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2019-11-07T16:07:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Atom Scott</title><subtitle>Atom Scott's personal website. I am a ML/DL research student with a thing for sports.
+</subtitle><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><entry><title type="html">An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution</title><link href="http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/" rel="alternate" type="text/html" title="An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution" /><published>2019-11-06T00:00:00+09:00</published><updated>2019-11-06T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/Interactive-Bivariate-Gaussian</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-11-06-Interactive-Bivariate-Gaussian/">&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.2/math.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://docs.opencv.org/3.4.1/opencv.js&quot;&gt;&lt;/script&gt;
+
+&lt;div id=&quot;canvasControls&quot;&gt;&lt;/div&gt;
+
+&lt;canvas id=&quot;canvas1&quot; style=&quot;display:block; width:100%;height:500px&quot;&gt;If you see this then your browser doesn't support
+    the necessary web tech!&lt;/canvas&gt;
+
+&lt;script&gt;
+    function bivariateNormal(x,y,meanX,meanY,stdX,stdY,corrCoeff){
+        let left = 1/(2*math.pi*stdX*stdY*Math.sqrt(1-corrCoeff**2));
+
+        let z = ((x-meanX)**2)/stdX**2 - (2*corrCoeff*(x-meanX)*(y-meanY))/(stdX*stdY) + ((y-meanY)**2)/stdY**2;
+        let expo = -z/ (2*(1-corrCoeff**2));
+        let right = math.exp(expo);
+        return math.multiply(left, right);
+    }
+
+
+    function draw(){
+        let mat = cv.Mat.zeros(c.height, c.width, cv.CV_8U);
+        let maxZ = bivariateNormal(meanX.getValue(), meanY.getValue(), meanX.getValue(), meanY.getValue(),stdX.getValue(), stdY.getValue(), corrCoeff.getValue());
+        for (i = 0; i &lt; 10000; i++) {
+
+            var x = Math.floor(Math.random() * Math.floor(c.width));
+            var y = Math.floor(Math.random() * Math.floor(c.height));
+            var z = bivariateNormal(x/c.width, y/c.height, meanX.getValue(), meanY.getValue(),stdX.getValue(), stdY.getValue(), corrCoeff.getValue());
+            mat.ucharPtr(y, x)[0] = z*255/maxZ;
+        }
+        cv.imshow(c, mat);
+    }
+
+    class Slider{
+        constructor(name, parentId, min, max, step=1){
+
+            const me = this;
+            me.name = name;
+            me.parent = document.getElementById(parentId);
+            me.step = step;
+            me.min = min;
+            me.max = max;
+
+            me.createElement();
+            me.slider = document.getElementById(me.name);
+            me.output = document.getElementById(me.name+&quot;Out&quot;);
+
+            me.output.innerHTML = me.slider.value;
+            me.slider.oninput = function f(){
+                me.output.innerHTML = me.slider.value;
+                draw();
+            };
+        }
+
+        getValue(){
+            return parseFloat(this.slider.value);
+        }
+        createElement(){
+            const me = this;
+            var sliderHTML = `
+                &lt;div class=&quot;slidecontainer&quot;&gt;
+                    &lt;input type=&quot;range&quot; min=&quot;${me.min}&quot; max=&quot;${me.max}&quot; value=&quot;${(me.min+me.max)/2}&quot; step=${me.step} class=&quot;slider&quot; id=&quot;${me.name}&quot;&gt;
+                    &lt;p&gt;${me.name}: &lt;span id=&quot;${me.name + 'Out'}&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+                &lt;/div&gt;`;
+            me.parent.insertAdjacentHTML('beforeend', sliderHTML);
+        }
+    }
+
+    var c = document.getElementById(&quot;canvas1&quot;);
+    var ctx = c.getContext(&quot;2d&quot;);
+
+    c.height = c.width / math.phi;
+    ctx.fillStyle = &quot;white&quot;;
+    ctx.fillRect(0, 0, c.width, c.height);
+
+    const meanX = new Slider(&quot;meanX&quot;, &quot;canvasControls&quot;, 0, 1, 0.01);
+    const meanY = new Slider(&quot;meanY&quot;, &quot;canvasControls&quot;, 0, 1, 0.01);
+    const stdX = new Slider(&quot;stdX&quot;, &quot;canvasControls&quot;, 0, 1, 0.01);
+    const stdY = new Slider(&quot;stdY&quot;, &quot;canvasControls&quot;, 0, 1, 0.01);
+    const corrCoeff = new Slider(&quot;corrCoeff&quot;, &quot;canvasControls&quot;, -1, 1, 0.01);
+
+    draw();
+
+&lt;/script&gt;</content><author><name>Atom Scott</name><email>atom.james.scott@gmail.com</email></author><summary type="html">An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution If you see this then your browser doesn't support the necessary web tech!</summary></entry><entry><title type="html">Predicting The Future In Sports With Deep Learning</title><link href="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/" rel="alternate" type="text/html" title="Predicting The Future In Sports With Deep Learning" /><published>2019-10-27T00:00:00+09:00</published><updated>2019-10-27T00:00:00+09:00</updated><id>http://localhost:4000/blog/en/Guide-to-traj-2019-Sports</id><content type="html" xml:base="http://localhost:4000/blog/en/2019-10-27-Guide-to-traj-2019-Sports/">&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#overview&quot; id=&quot;markdown-toc-overview&quot;&gt;Overview&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#diverse-generation-for-multi-agent-sports-games-paper&quot; id=&quot;markdown-toc-diverse-generation-for-multi-agent-sports-games-paper&quot;&gt;Diverse Generation for Multi-Agent Sports Games [paper]&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper&quot; id=&quot;markdown-toc-stochastic-prediction-of-multi-agent-interactions-from-partial-observations-paper&quot;&gt;Stochastic Prediction of Multi-Agent Interactions from Partial Observations [paper]&lt;/a&gt;&lt;/li&gt;
