@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 
 # An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution
 
-
+Code can be found in [this github repo](https://github.com/AtomScott/Interactive-Bivariate-Gaussian). Feel free to use and improve, feedback is welcome.
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.2.2/math.min.js'></script>
 <script src="https://docs.opencv.org/3.4.1/opencv.js"></script>
 
