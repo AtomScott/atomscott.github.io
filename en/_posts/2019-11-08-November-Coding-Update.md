@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Start] November Coding Update Thread
+title: 【Start】 November Coding Update Thread
 comments: true
 ---
 
