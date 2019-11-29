@@ -61,3 +61,16 @@ I don't need a fucking reason to get out of bed, I'm gifted with the time to **r
 I going to stick with that mindset for a long time. Fuck everything else.
 
 Okay, I'm over with my rant. I'm going to get back to work.
+
+## Self Micromanagement and Reflection
+
+I think micromanaging oneself gets a bad rap. Being micromanaged by someone else is a different matter, their interests are not mine, so I'll refuse to be micromanaged.
+
+Jordan Petersons second rule for life was 
+
+>2. Treat yourself like someone you are responsible for helping
+
+And wholeheartedly agree. If I was a football coach, I would tell my atheletes to warmp up and cool down properly, never letting them skip. Whereas when I was an athelete myself, there would be less days where I spent enough time on warmups/cooldowns then I didn't.
+
+I think the same goes for micromanaging oneself. It allows me to take a objective view of myself and helps me make informed decisions. I can offload unimportant decision making(what, when, where to eat dinner etc.) for a certain time of day and focus on the moment.
+
