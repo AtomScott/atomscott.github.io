@@ -2,7 +2,6 @@
 layout: post
 title: [Start] November Coding Update Thread
 comments: true
-
 ---
 
 # [Start] November Coding Update Thread
