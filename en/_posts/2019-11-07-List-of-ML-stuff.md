@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Memo] List of stuff in DL\RL
+title: 【Memo】 List of stuff in DL\RL
 comments: true
 description: >
     It seems as though there is a lot to learn in deep learning. And it's easy to fall into a rabbit hole of productivity porn by looking at the endless resources sorounding relevant topics. Here's everything I thought looked cool at some point but didn't bother reading through properly.
