@@ -24,7 +24,7 @@ A good example of the benefits of PYPY is the code I used in yesterdays [competi
 
 I got a TLE from the python3 compiler while the same code compiled PyPY just worked like magic.
 
-![](assets/img/blog/Screenshot%20from%202019-12-02%2018-02-59.png)
+![](/assets/img/blog/Screenshot%20from%202019-12-02%2018-02-59.png)
 
 So I couldn't find a reason to learn C++ just yet. PyPY seems to serve me well enough for now.
 
@@ -36,7 +36,7 @@ I'm just going to have to keep on trying.
 
 Here's what my current graph looks like. (Spoilers, I'm still shit!)
 
-![](assets/img/blog/Screenshot%20from%202019-12-02%2018-10-43.png)
+![](/assets/img/blog/Screenshot%20from%202019-12-02%2018-10-43.png)
 
 ## Goal until next month
 
