@@ -1,10 +1,6 @@
 ---
 layout: post
-<<<<<<< HEAD
-title: [Start] November Coding Update
-=======
 title: 【Start】 November Coding Update Thread
->>>>>>> 63a65c563c27b919c7029d46ec35c58b186b5b85
 comments: true
 ---
 
