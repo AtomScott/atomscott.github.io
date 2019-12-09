@@ -1,10 +1,11 @@
 ---
 layout: post
+<<<<<<< HEAD
 title: [Start] November Coding Update
+=======
+title: 【Start】 November Coding Update Thread
+>>>>>>> 63a65c563c27b919c7029d46ec35c58b186b5b85
 comments: true
-description: >
-  Being able to predict trajectories of people is useful for obvious applications such as human interactive robotics and autonomous vehichles. There is also an interest in team sport since it could provide insight for tactical analsis. In this post, I write about the basics of Pedestrian Trajectory Prediction. In the next post I will write about Multi-Agent Trajcetory prediciton (e.g. tracking in team sport).
-excerpt_separator: <!--more-->
 ---
 
 # [Start] November Coding Update Thread

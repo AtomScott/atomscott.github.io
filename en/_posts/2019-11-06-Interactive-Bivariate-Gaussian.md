@@ -6,6 +6,7 @@ description: >
     ※ Some Javascript issues, reload the page if you can't see the canvas working!
     Also, it takes a while to load so please be patient.
 excerpt_separator: <!--more-->
+
 ---
 
 # An Interactive JS Canvas to Understand the Bivariate Gaussian Distribution
