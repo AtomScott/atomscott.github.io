@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: Artificial Intelligence
 comments: true
 excerpt_separator: <!--more-->
