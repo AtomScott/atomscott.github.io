@@ -1,8 +1,7 @@
 ---
 layout: post
-title: December 2019
+title: Artificial Intelligence
 comments: true
 excerpt_separator: <!--more-->
 ---
 
-Sample Text
