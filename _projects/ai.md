@@ -5,7 +5,7 @@ comments: true
 excerpt_separator: <!--more-->
 ---
 
-{.toc}
+{:toc}
 
 # 2019 Decemeber
 
