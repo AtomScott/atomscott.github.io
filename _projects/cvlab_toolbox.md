@@ -2,8 +2,8 @@
 layout: project
 title: 'cvlab_toolbox'
 date: 1 Dec 2019
-image: /assets/img/projects/cvdocs_cover.jpg
-screenshot: /assets/img/projects/cvdocs_cover.jpg
+image: /assets/img/projects/cvdocs_cover.png
+screenshot: /assets/img/projects/cvdocs_cover.png
 links:
   - title: Documentation
     url: https://cvlab-toolbox.readthedocs.io/en/latest/
