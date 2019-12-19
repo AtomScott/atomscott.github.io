@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Fujin
-date: 4 Sep 2018
+date: 14 Dec 2019
 image: /assets/img/projects/fujin.png
 screenshot: /assets/img/projects/fujin.png
 links:

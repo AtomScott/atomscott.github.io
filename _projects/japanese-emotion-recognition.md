@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Japanese Audio Emotion Recognition
-date: 4 Sep 2018
+date: 14 Dec 2019
 image: /assets/img/projects/jae.jpg
 screenshot: /assets/img/projects/jae.jpg
 links:
