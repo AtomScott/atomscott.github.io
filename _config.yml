@@ -52,12 +52,12 @@ menu:
     url:               /projects/
   - title:             English Posts
     url:               /blog/en
-  - title:             投稿(日本語)
+  - title:             投稿
     url:               /blog/jp
   - title:             Publications
     url:               /publications
-  - title:             Slides
-    url:               /projects/ai-slides
+#  - title:             Slides
+#    url:               /projects/ai-slides
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
