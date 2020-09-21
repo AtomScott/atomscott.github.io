@@ -2,8 +2,8 @@
 layout: project
 title: 'Awesome Sports Analytics'
 date: 21 June 2020
-image: /assets/img/projects/awe-sa.png
-screenshot: /assets/img/projects/awe-sa.png
+image: /assets/img/projects/awe-sa.jpg
+screenshot: /assets/img/projects/awe-sa.jpg
 links:
   - title: Website
     url: https://github.com/AtomScott/awesome-sports-analytics
