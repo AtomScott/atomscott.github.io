@@ -13,5 +13,7 @@
 			"path": "assets"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"pasteImage.path": "/home/member/github/atomscott.github.io/assets/img/blog/"
+	}
 }
