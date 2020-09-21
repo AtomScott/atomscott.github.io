@@ -25,7 +25,7 @@ I thought trajectory prediction in the sports domain sounded like a fun project 
 
 That had me wondering what other sports analytics work has been done, so I decided to put together an Awesome List for machine learning applications in the sports.
 
-(https://github.com/AtomScott/awesome-sports-analytics)[https://github.com/AtomScott/awesome-sports-analytics]
+[https://github.com/AtomScott/awesome-sports-analytics](https://github.com/AtomScott/awesome-sports-analytics)
 
 The list is far from complete and I would really appreciate help curating things to include!
 
