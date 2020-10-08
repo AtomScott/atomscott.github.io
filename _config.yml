@@ -32,7 +32,7 @@ tagline:               >
   Football, Analytics and Science
 
 # A list of keywords for your blog
-keywords:              [Football, Analytics and Science]
+keywords:              [Football, Analytics, Science, Atom, Scott]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -50,6 +50,8 @@ author:
 menu:
   - title:             Projects
     url:               /projects/
+  - title:             Learning
+    url:               /learning/
   - title:             English Posts
     url:               /blog/en
   - title:             投稿
